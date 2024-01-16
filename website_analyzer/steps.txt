@@ -1,0 +1,4 @@
+Developing the Website Analyzer App
+Models: Define any models if you plan to store analysis results or website data.
+
+Analysis Logic: Implement functions to send requests to websites and analyze HTML content. For UX/UI analysis, you might use libraries like BeautifulSoup to parse HTML and check for elements like CTA buttons, forms, etc.
