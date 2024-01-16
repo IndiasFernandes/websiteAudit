@@ -39,5 +39,4 @@ Contributions are welcome! If you have improvements or bug fixes:
 This project is licensed under the "GNU General Public License v3.0".
 
 ## Acknowledgements
-- A shoutout to all contributors and maintainers.
-- Special thanks to [Special Mentions].
+- This is a tool developed from Indias Fernandes to Notice de Elephant
