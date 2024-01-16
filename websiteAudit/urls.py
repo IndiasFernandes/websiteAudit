@@ -17,15 +17,17 @@ Including another URLconf
 # This docstring provides guidance on how to configure URLs in a Django project. It explains how to define URL patterns using function views, class-based views, and how to include other URL configurations from different apps.
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 # These lines import necessary modules and functions.
 # 'admin' is imported from 'django.contrib' for administrative interface.
 # 'path' is imported from 'django.urls' to define URL patterns.
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api/', include('api.urls')),
 ]
 # 'urlpatterns' is a Python list where each element is a call to the 'path' function, defining a specific URL pattern.
 # Here, it includes a single pattern for the Django admin interface.
 # 'path('admin/', admin.site.urls)' defines a URL pattern for the admin site.
 # Any URL that starts with 'admin/' will be directed to Django's admin interface.
+
