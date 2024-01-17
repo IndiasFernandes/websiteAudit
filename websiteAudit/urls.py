@@ -24,7 +24,7 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('api.urls')),
+    path('', include('api.urls')),
 ]
 # 'urlpatterns' is a Python list where each element is a call to the 'path' function, defining a specific URL pattern.
 # Here, it includes a single pattern for the Django admin interface.
