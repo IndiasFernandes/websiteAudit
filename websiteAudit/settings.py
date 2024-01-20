@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # provide more details about Django settings and their documentation.
 
 from pathlib import Path
+import os
 # This import statement brings in the Path class from the pathlib module, which is used for filesystem path
 # manipulations.
 
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'report_generator',
     'website_analyzer',
+    'api',
 ]
 
 
@@ -140,3 +142,8 @@ STATIC_URL = 'static/'
 # DEFAULT_AUTO_FIELD is a string defining the type of primary key to use for models that don’t specify a field with
 # 'primary_key=True'.
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'exports/images')
+MEDIA_URL = '/exports/images/'

@@ -9,7 +9,7 @@ from . import views # This line imports the 'views.py' file.
 # TODO: Define your routes here
 
 urlpatterns = [
-    path('', views.getData),
+    path('getData/', views.getData),
 ]
 
 # urlpatterns = [
