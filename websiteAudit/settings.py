@@ -15,6 +15,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+
 # This import statement brings in the Path class from the pathlib module, which is used for filesystem path
 # manipulations.
 
@@ -52,7 +53,6 @@ INSTALLED_APPS = [
     'api',
 ]
 
-
 # MIDDLEWARE is a list of middleware classes that are run during request/response processing.
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -88,7 +88,6 @@ TEMPLATES = [
 # WSGI_APPLICATION is the dotted path to the WSGI application object that Django's built-in servers use.
 WSGI_APPLICATION = 'websiteAudit.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -99,7 +98,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -119,7 +117,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -143,7 +140,7 @@ STATIC_URL = 'static/'
 # 'primary_key=True'.
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'exports/images')
-MEDIA_URL = '/exports/images/'
+# Media files
+MEDIA_ROOT = BASE_DIR / 'media'
+# print(MEDIA_ROOT)
+MEDIA_URL = '/media/'

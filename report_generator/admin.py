@@ -1,4 +1,8 @@
 from django.contrib import admin
 from .models import WebsiteReport
 
-admin.site.register(WebsiteReport)
+class WebsiteReportAdmin(admin.ModelAdmin):
+    list_display = ('url', 'first_name', 'last_name', 'email', 'overall_rating', 'date')
+    # Add other fields as needed
+
+admin.site.register(WebsiteReport, WebsiteReportAdmin)

@@ -29,7 +29,7 @@ def take_screenshot(url):
     # Load the page
     driver.get(url)
 
-    path = '../../exports/images/screenshots/' + get_domain_from_url(url) + '.png'
+    path = '../../media/' + get_domain_from_url(url) + '.png'
 
     # Save the screenshot
     driver.save_screenshot(path)
@@ -37,7 +37,7 @@ def take_screenshot(url):
     # Close the browser
     driver.quit()
 
-take_screenshot('https://www.innerflect.com')
+take_screenshot('https://duckduckgo.com')
 
 
 

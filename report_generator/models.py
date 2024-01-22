@@ -1,8 +1,12 @@
 from django.db import models
+import os
+from django.conf import settings
+from report_generator.screenshot.takeScreenshot import get_domain_from_url
+
 
 class WebsiteReport(models.Model):
     url = models.URLField()
-    screenshot = models.ImageField(upload_to='screenshots/')
+    screenshot = models.ImageField(upload_to='', blank=True, null=True)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
@@ -22,52 +26,21 @@ class WebsiteReport(models.Model):
     social_proof = models.TextField()  # Testimonials, reviews, etc.
     company_info_presence = models.TextField()  # Company data, policies, etc.
 
+    def save(self, *args, **kwargs):
+        url_updated = get_domain_from_url(self.url)
+
+        image_abs_path = os.path.join(settings.MEDIA_ROOT, f"{url_updated}.png")
+        print(image_abs_path)
+        # Check if the file exists
+        if os.path.isfile(image_abs_path):
+            print('Found the file')
+            # Open the file and assign it to the screenshot field
+            with open(image_abs_path, 'rb') as f:
+                self.screenshot.save(f"{url_updated}.png", f, save=False)
+                print('Saved the file')
+        else:
+            print('Did not find the file')
+
+        super().save(*args, **kwargs)
 
 
-from report_generator.models import WebsiteReport
-from django.core.files import File
-from django.core.files.images import ImageFile
-report1 = WebsiteReport(
-    url='https://duckduckgo.com',
-    first_name='John',
-    last_name='Doe',
-    email='john@example.com',
-    overall_rating=4.5,
-    cta_button_placement_rating=4.0,
-    cta_clarity_rating=4.2,
-    form_simplicity_rating=3.8,
-    form_autofill_rating=4.1,
-    messaging_clarity_rating=4.5,
-    headline_focus_rating=4.3,
-    offer_transparency_rating=4.4,
-    social_proof='Testimonials, reviews, etc.',
-    company_info_presence='Company data, policies, etc.'
-)
-# Replace 'path/to/screenshot1.jpg' with the actual path to your screenshot image
-
-
-with open('/exports/images/screenshots/duckduckgo.com.png', 'rb') as f:
-    report1.screenshot.save('duckduckgo.com.png', ImageFile(f))
-report1.save()
-# Create and save the second WebsiteReport instance
-report2 = WebsiteReport(
-    url='https://google.com',
-    first_name='Jane',
-    last_name='Doe',
-    email='jane@example.org',
-    overall_rating=4.7,
-    cta_button_placement_rating=4.5,
-    cta_clarity_rating=4.6,
-    form_simplicity_rating=4.0,
-    form_autofill_rating=4.2,
-    messaging_clarity_rating=4.6,
-    headline_focus_rating=4.4,
-    offer_transparency_rating=4.5,
-    social_proof='More testimonials, reviews, etc.',
-    company_info_presence='More company data, policies, etc.'
-)
-# Replace 'path/to/screenshot2.jpg' with the actual path to your screenshot image
-with open('exports/images/screenshots/innerflect.com.png', 'rb') as f:
-    report2.screenshot.save('innerflect.com.png', ImageFile(f))
-
-report2.save()

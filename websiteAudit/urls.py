@@ -18,6 +18,8 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
+from django.conf import settings
+from django.conf.urls.static import static
 # These lines import necessary modules and functions.
 # 'admin' is imported from 'django.contrib' for administrative interface.
 # 'path' is imported from 'django.urls' to define URL patterns.
@@ -26,7 +28,8 @@ urlpatterns = [
     path('api/', include('api.urls')),
     path('', admin.site.urls),
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# print(urlpatterns)
 # 'urlpatterns' is a Python list where each element is a call to the 'path' function, defining a specific URL pattern.
 # Here, it includes a single pattern for the Django admin interface.
 # 'path('admin/', admin.site.urls)' defines a URL pattern for the admin site.
