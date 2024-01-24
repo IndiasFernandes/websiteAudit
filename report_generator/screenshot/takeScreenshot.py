@@ -16,6 +16,7 @@ def get_domain_from_url(url):
 
 # Function to take a screenshot of a web page
 def take_screenshot(url):
+    print('Taking screenshot of ' + url)
     # Set up headless Chrome options
     options = Options()
     options.headless = True
@@ -37,7 +38,6 @@ def take_screenshot(url):
     # Close the browser
     driver.quit()
 
-take_screenshot('https://duckduckgo.com')
 
 
-
+take_screenshot('http://pornhub.com')

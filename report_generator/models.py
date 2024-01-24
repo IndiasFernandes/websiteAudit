@@ -10,21 +10,21 @@ class WebsiteReport(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
     email = models.EmailField()
-    overall_rating = models.FloatField()
     date = models.DateTimeField(auto_now_add=True)
 
     # Diagnostics
-    cta_button_placement_rating = models.FloatField()
-    cta_clarity_rating = models.FloatField()
-    form_simplicity_rating = models.FloatField()
-    form_autofill_rating = models.FloatField()
-    messaging_clarity_rating = models.FloatField()
-    headline_focus_rating = models.FloatField()
-    offer_transparency_rating = models.FloatField()
+    overall_rating = models.FloatField(blank=True, null=True)
+    cta_button_placement_rating = models.FloatField(blank=True, null=True)
+    cta_clarity_rating = models.FloatField(blank=True, null=True)
+    form_simplicity_rating = models.FloatField(blank=True, null=True)
+    form_autofill_rating = models.FloatField(blank=True, null=True)
+    messaging_clarity_rating = models.FloatField(blank=True, null=True)
+    headline_focus_rating = models.FloatField(blank=True, null=True)
+    offer_transparency_rating = models.FloatField(blank=True, null=True)
 
     # Trust Signals
-    social_proof = models.TextField()  # Testimonials, reviews, etc.
-    company_info_presence = models.TextField()  # Company data, policies, etc.
+    social_proof = models.TextField(blank=True, null=True)  # Testimonials, reviews, etc.
+    company_info_presence = models.TextField(blank=True, null=True)  # Company data, policies, etc.
 
     def save(self, *args, **kwargs):
         url_updated = get_domain_from_url(self.url)

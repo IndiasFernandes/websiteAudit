@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'report_generator',
     'website_analyzer',
     'api',
+    'corsheaders',
 ]
 
 # MIDDLEWARE is a list of middleware classes that are run during request/response processing.
@@ -62,6 +63,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:8000",  # Add the origin of your HTML page
+    # Add more origins if needed
 ]
 
 # ROOT_URLCONF is a string representing the dotted path to the URL configuration module for the project.
