@@ -1,7 +1,8 @@
 from django.db import models
 import os
 from django.conf import settings
-from report_generator.screenshot.takeScreenshot import get_domain_from_url
+from screenshot.takeScreenshot import get_domain_from_url, take_screenshot
+from django.core.files import File
 
 
 class WebsiteReport(models.Model):
@@ -28,19 +29,24 @@ class WebsiteReport(models.Model):
 
     def save(self, *args, **kwargs):
         url_updated = get_domain_from_url(self.url)
+        filename = f"{url_updated}.png"
+        image_abs_path = os.path.join(settings.MEDIA_ROOT, filename)
 
-        image_abs_path = os.path.join(settings.MEDIA_ROOT, f"{url_updated}.png")
-        print(image_abs_path)
+        existing_entry = WebsiteReport.objects.filter(url=self.url).first()
+        print(existing_entry)
+
+        if not os.path.isfile(image_abs_path):
+            print('Didnt find screenshot, taking a new screenshot')
+            take_screenshot(self.url)
+
+
+
         # Check if the file exists
         if os.path.isfile(image_abs_path):
             print('Found the file')
-            # Open the file and assign it to the screenshot field
-            with open(image_abs_path, 'rb') as f:
-                self.screenshot.save(f"{url_updated}.png", f, save=False)
-                print('Saved the file')
-        else:
-            print('Did not find the file')
+            self.screenshot.name = f'{filename}'
+
+            print('Assigned the existing file')
 
         super().save(*args, **kwargs)
-
 

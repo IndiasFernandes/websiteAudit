@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse
+import os
+from django.conf import settings
 
 # Function to get the domain from a URL
 def get_domain_from_url(url):
@@ -30,14 +32,14 @@ def take_screenshot(url):
     # Load the page
     driver.get(url)
 
-    path = '../../media/' + get_domain_from_url(url) + '.png'
+    # Construct the file path using MEDIA_ROOT
+    filename = get_domain_from_url(url) + '.png'
+    filepath = os.path.join(settings.MEDIA_ROOT, filename)
+
+    print('Saving screenshot as ' + filepath + '\n')
 
     # Save the screenshot
-    driver.save_screenshot(path)
+    driver.save_screenshot(filepath)
 
     # Close the browser
     driver.quit()
-
-
-
-take_screenshot('http://pornhub.com')

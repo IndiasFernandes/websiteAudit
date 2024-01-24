@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Submit Form</h1>
+    <form id="myForm">
+        <label for="industry">Industry:</label><br>
+        <input type="text" id="industry" name="industry" value="Sample Industry"><br><br>
+
+        <label for="service">Service:</label><br>
+        <input type="text" id="service" name="service" value="Sample Service"><br><br>
+
+        <label for="name_company">Name Company:</label><br>
+        <input type="text" id="name_company" name="name_company" value="Sample Company Name"><br><br>
+
+        <label for="url">URL:</label><br>
+        <input type="text" id="url" name="url" value="http://sample-url.com"><br><br>
+
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name" value="John"><br><br>
+
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name" value="Doe"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" value="john@example.com"><br><br>
+
+        <input type="checkbox" id="accept_terms" name="accept_terms" checked>
+        <label for="accept_terms">I accept the terms and conditions</label><br><br>
+
+        <input type="button" value="Submit" id="submitButton">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#submitButton").click(function() {
+            // Serialize the form data
+            var formData = $("#myForm").serializeArray();
+            var postData = {};
+
+            // Convert the serialized data to JSON format
+            $.each(formData, function(_, kv) {
+                postData[kv.name] = kv.value;
+            });
+
+            // Post the JSON data to your Django endpoint
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:8000/api/addData/",
+                data: JSON.stringify(postData),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(response) {
+                    // Handle success response
+                    console.log("Data successfully submitted:", response);
+                },
+                error: function(xhr, status, error) {
+                    // Handle error response
+                    console.error("Error:", error);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
