@@ -1,8 +1,11 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse
-import os
+import urllib.parse
+
 from django.conf import settings
+import os
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Function to get the domain from a URL
 def get_domain_from_url(url):
@@ -16,30 +19,32 @@ def get_domain_from_url(url):
 
     return domain
 
-# Function to take a screenshot of a web page
+# Function to take a screenshot of a web page using Thumb.io
 def take_screenshot(url):
-    print('Taking screenshot of ' + url)
-    # Set up headless Chrome options
-    options = Options()
-    options.headless = True
-    options.add_argument("--headless")  # Ensure GUI is off
-    options.add_argument("--no-sandbox")  # Bypass OS security model
-    options.add_argument("--disable-gpu")  # Applicable to windows os only
+    logger.error('Taking screenshot of ' + url)
 
-    # Initialize the driver
-    driver = webdriver.Chrome(options=options)
+    # Your Thumb.io API key
+    api_key = '70136-screenshot'
 
-    # Load the page
-    driver.get(url)
+    # URL-encode the website URL
+    encoded_url = urllib.parse.quote_plus(url)
+
+    # Construct the Thumb.io URL
+    thumb_io_url = f'https://image.thum.io/get/auth/{api_key}/' + url;
 
     # Construct the file path using MEDIA_ROOT
     filename = get_domain_from_url(url) + '.png'
     filepath = os.path.join(settings.MEDIA_ROOT, filename)
 
-    print('Saving screenshot as ' + filepath + '\n')
+    # Use Thumb.io URL to save the screenshot - here you might download the image and save it locally
+    # For example, using requests (ensure you have 'requests' installed: pip install requests)
+    import requests
+    response = requests.get(thumb_io_url)
+    if response.status_code == 200:
+        with open(filepath, 'wb') as f:
+            f.write(response.content)
+        logger.error(f'Saving screenshot as {filepath}')
+    else:
+        logger.error(f'Failed to capture screenshot for {url}. Status code: {response.status_code}')
 
-    # Save the screenshot
-    driver.save_screenshot(filepath)
-
-    # Close the browser
-    driver.quit()
+    # Note: In production, consider handling exceptions and errors more gracefully

@@ -20,6 +20,9 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
+
+from websiteAudit import views
+
 # These lines import necessary modules and functions.
 # 'admin' is imported from 'django.contrib' for administrative interface.
 # 'path' is imported from 'django.urls' to define URL patterns.
@@ -27,6 +30,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('api/', include('api.urls')),
     path('admin/', admin.site.urls),
+    path('stdout/', views.display_stdout, name='display_stdout'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # print(urlpatterns)

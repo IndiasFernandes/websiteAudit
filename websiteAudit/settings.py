@@ -16,6 +16,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
+import sys
+import logging
+
+
+
+
 # This import statement brings in the Path class from the pathlib module, which is used for filesystem path
 # manipulations.
 
@@ -34,7 +40,7 @@ DEBUG = True
 # DEBUG is a boolean that turns on/off debug mode. It should be False in production for security reasons.
 
 
-ALLOWED_HOSTS = ['145.224.125.138', 'innerflect.com', '127.0.0.1']
+ALLOWED_HOSTS = ['145.224.125.138', 'innerflect.com', '127.0.0.1', 'noticetheelephant.com']
 # ALLOWED_HOSTS is a list of strings representing the host/domain names that this Django site can serve.
 
 
@@ -57,6 +63,7 @@ INSTALLED_APPS = [
 
 # MIDDLEWARE is a list of middleware classes that are run during request/response processing.
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -64,12 +71,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000",  # Add the origin of your HTML page
-    # Add more origins if needed
+    'https://noticetheelephant.com',# Add the origin of your HTML page
+    'https://145.224.125.138',
 ]
 
 # ROOT_URLCONF is a string representing the dotted path to the URL configuration module for the project.
@@ -141,6 +150,8 @@ USE_TZ = True
 # STATIC_URL is the URL to use when referring to static files located in STATIC_ROOT.
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
@@ -152,3 +163,28 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'media'
 # print(MEDIA_ROOT)
 MEDIA_URL = '/media/'
+
+
+
+LOG_DIR = os.path.join(BASE_DIR, 'logs')  # Define a directory for log files
+
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+LOG_FILE = os.path.join(LOG_DIR, 'stdout.log')  # Path to your log file
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': LOG_FILE,
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'INFO',
+    },
+}
