@@ -14,6 +14,14 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # provide more details about Django settings and their documentation.
 
 from pathlib import Path
+import os
+
+import sys
+import logging
+
+
+
+
 # This import statement brings in the Path class from the pathlib module, which is used for filesystem path
 # manipulations.
 
@@ -31,7 +39,8 @@ SECRET_KEY = 'django-insecure-...'
 DEBUG = True
 # DEBUG is a boolean that turns on/off debug mode. It should be False in production for security reasons.
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['145.224.125.138', 'innerflect.com', '127.0.0.1', 'noticetheelephant.com']
 # ALLOWED_HOSTS is a list of strings representing the host/domain names that this Django site can serve.
 
 
@@ -45,11 +54,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'report_generator',
+    'website_analyzer',
+    'api',
+    'corsheaders',
 ]
-
 
 # MIDDLEWARE is a list of middleware classes that are run during request/response processing.
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -57,6 +71,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+]
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    'https://noticetheelephant.com',# Add the origin of your HTML page
+    'https://145.224.125.138',
 ]
 
 # ROOT_URLCONF is a string representing the dotted path to the URL configuration module for the project.
@@ -83,7 +105,6 @@ TEMPLATES = [
 # WSGI_APPLICATION is the dotted path to the WSGI application object that Django's built-in servers use.
 WSGI_APPLICATION = 'websiteAudit.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -94,7 +115,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -115,7 +135,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -131,9 +150,41 @@ USE_TZ = True
 # STATIC_URL is the URL to use when referring to static files located in STATIC_ROOT.
 STATIC_URL = 'static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 # DEFAULT_AUTO_FIELD is a string defining the type of primary key to use for models that don’t specify a field with
 # 'primary_key=True'.
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Media files
+MEDIA_ROOT = BASE_DIR / 'media'
+# print(MEDIA_ROOT)
+MEDIA_URL = '/media/'
+
+
+
+LOG_DIR = os.path.join(BASE_DIR, 'logs')  # Define a directory for log files
+
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+LOG_FILE = os.path.join(LOG_DIR, 'stdout.log')  # Path to your log file
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': LOG_FILE,
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'INFO',
+    },
+}
