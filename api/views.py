@@ -29,10 +29,6 @@ def addItem(request):
     if serializer.is_valid():
         serializer.save()
 
-
-
-
-
         # Fetch the saved object
         saved_item = WebsiteReport.objects.get(pk=serializer.instance.pk)
 
@@ -49,21 +45,35 @@ def addItem(request):
         # Construct the JSON response
         response_data = {
             'image_url': new_url,
-            'url': saved_item.url,
-            'first_name': saved_item.first_name,
-            'last_name': saved_item.last_name,
-            'email': saved_item.email,
-            'date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),  # Format date as needed
-            'overall_rating': saved_item.overall_rating,
-            'cta_button_placement_rating': saved_item.cta_button_placement_rating,
-            'cta_clarity_rating': saved_item.cta_clarity_rating,
-            'form_simplicity_rating': saved_item.form_simplicity_rating,
-            'form_autofill_rating': saved_item.form_autofill_rating,
-            'messaging_clarity_rating': saved_item.messaging_clarity_rating,
-            'headline_focus_rating': saved_item.headline_focus_rating,
-            'offer_transparency_rating': saved_item.offer_transparency_rating,
-            'social_proof': saved_item.social_proof,
-            'company_info_presence': saved_item.company_info_presence,
+            'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),  # Format date as needed
+
+            'First Name': saved_item.first_name,
+            'Last Name': saved_item.last_name,
+            'Url': saved_item.url,
+            'E-mail': saved_item.email,
+
+            'Company Name': saved_item.name_company,
+            'Industry': saved_item.industry,
+            'Product/Service': saved_item.service,
+
+            'Overall Rating': saved_item.overall_rating,
+            'CTA Button Placement Rating': saved_item.cta_button_placement_rating,
+            'CTA Clarity Rating': saved_item.cta_clarity_rating,
+            'Form Simplicity Rating': saved_item.form_simplicity_rating,
+            'Form Autofill Rating': saved_item.form_autofill_rating,
+            'Messaging Clarity Rating': saved_item.messaging_clarity_rating,
+            'Headline Focus Rating': saved_item.headline_focus_rating,
+
+            'CTA Button Placement Diagnostics': saved_item.cta_button_placement_diagnostics,
+            'CTA Clarity Diagnostics': saved_item.cta_clarity_diagnostics,
+            'Form Simplicity Diagnostics': saved_item.form_simplicity_diagnostics,
+            'Form Autofill Diagnostics': saved_item.form_autofill_diagnostics,
+            'Messaging Clarity Diagnostics': saved_item.messaging_clarity_diagnostics,
+            'Headline Focus Diagnostics': saved_item.headline_focus_diagnostics,
+
+            'Social Proof': saved_item.social_proof,
+            'Company Info Presence': saved_item.company_info_presence,
+
             'other_field': 'other_value',  # Add any other fields you want to include
         }
 
