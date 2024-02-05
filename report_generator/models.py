@@ -36,13 +36,13 @@ class WebsiteReport(models.Model):
     offer_transparency_rating = models.FloatField(blank=True, null=True)
 
     # Diagnostics
-    cta_button_placement_diagnostics = models.FloatField(blank=True, null=True)
-    cta_clarity_diagnostics = models.FloatField(blank=True, null=True)
-    form_simplicity_diagnostics = models.FloatField(blank=True, null=True)
-    form_autofill_diagnostics = models.FloatField(blank=True, null=True)
-    messaging_clarity_diagnostics = models.FloatField(blank=True, null=True)
-    headline_focus_diagnostics = models.FloatField(blank=True, null=True)
-    offer_transparency_diagnostics = models.FloatField(blank=True, null=True)
+    cta_button_placement_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    cta_clarity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    form_simplicity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    form_autofill_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    messaging_clarity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    headline_focus_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    offer_transparency_diagnostics = models.CharField(blank=True, null=True, max_length=100)
 
     # Trust Signals
     social_proof = models.TextField(blank=True, null=True)  # Testimonials, reviews, etc.
