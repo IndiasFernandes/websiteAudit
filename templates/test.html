@@ -8,17 +8,12 @@
 <body>
     <h1>Submit Form</h1>
     <form id="myForm">
-        <label for="industry">Industry:</label><br>
-        <input type="text" id="industry" name="industry" value="Sample Industry"><br><br>
-
-        <label for="service">Service:</label><br>
-        <input type="text" id="service" name="service" value="Sample Service"><br><br>
-
-        <label for="name_company">Name Company:</label><br>
-        <input type="text" id="name_company" name="name_company" value="Sample Company Name"><br><br>
 
         <label for="url">URL:</label><br>
-        <input type="text" id="url" name="url" value="http://sample-url.com"><br><br>
+        <input type="text" id="url" name="url" value="http://innerflect.com"><br><br>
+
+        <label for="url">Company:</label><br>
+        <input type="text" id="name_company" name="name_company" value="Inner Flect"><br><br>
 
         <label for="first_name">First Name:</label><br>
         <input type="text" id="first_name" name="first_name" value="John"><br><br>
@@ -51,7 +46,7 @@
             // Post the JSON data to your Django endpoint
             $.ajax({
                 type: "POST",
-                url: "http://127.0.0.1:8000/api/addData/",
+                url: "https://innerflect.com/websiteAudit/api/addData/",
                 data: JSON.stringify(postData),
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",

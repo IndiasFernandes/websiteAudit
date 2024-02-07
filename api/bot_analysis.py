@@ -1,64 +1,70 @@
-import ast
-
 import openai
 import os
+import ast
 
+# Load the API key from a config file
 API_KEY = open('config', 'r').read()
 client = openai.OpenAI(api_key=API_KEY)
 
 def generate_analysis_prompt(html_content):
-    return f"""
-    Based on the HTML content provided, conduct a thorough website audit focused on conversion rate optimization, considering the following aspects and criteria:
+    """
+    Generates a prompt for analyzing a website's landing page based on HTML content, focusing on conversion rate optimization.
+    """
+    prompt_text = f"""
+    Given the HTML content of a landing page, provide a detailed analysis focusing on elements crucial for conversion rate optimization. Consider the user experience (UX/UI), the effectiveness of call-to-action (CTA) buttons, form simplicity, clarity of messaging and offers, trust signals, and technical aspects like page load speed and mobile responsiveness.
 
-    1. **UX/UI:**
-        - **Call-to-Action (CTA):**
-            - Evaluate the placement of the call-to-action button. Is there a call to action, and is it placed above the fold?
-            - Assess the clarity of the call to action. Is it clear what the call to action does?
+    Evaluate the landing page on the following points:
 
-        - **Forms:**
-            - Are the forms simple and short?
-            - Is there autofill functionality to improve user experience?
+    1. UX/UI Design:
+       - Placement and clarity of CTA buttons.
+       - Simplicity and brevity of forms.
 
-        - **Messaging and Offer:**
-            - Is the text clear and easy to read?
-            - Are the headlines focused on outcomes beneficial to users?
-            - Is the offer transparent and clear?
+    2. Content and Messaging:
+       - Readability and focus of text and headlines.
+       - Transparency and appeal of offers.
 
-    2. **Trust Signals:**
-        - Evaluate the presence of social proof, such as testimonials, reviews, certifications, and partner logos.
-        - Assess the presence of company information, including company data, secure payment badges, social links, and policies (return policy, privacy policy, terms of use).
+    3. Trust Signals:
+       - Presence of testimonials, certifications, and secure payment badges.
+       - Availability of company information and policies.
 
-    3. **Technical (Not necessary but beneficial):**
-        - Comment on the page load speed.
-        - Assess mobile responsiveness.
+    4. Technical Performance:
+       - Page load speed.
+       - Mobile responsiveness.
 
-    Provide a written analysis for each point, generating a Python dictionary with the following variables and provide a concise analysis within each variable (maximum 100 characters per variable) for a website focused on conversion rate optimization:
+    Your analysis should fill in the following Python dictionary with concise feedback (up to 1000 characters) for each listed aspect and provide an overall rating for the landing page's optimization level from 0 (poorly optimized) to 100 (highly optimized):
 
-1. 'cta_button_placement_diagnostics': ""
-2. 'cta_clarity_diagnostics': ""
-3. 'form_simplicity_diagnostics': ""
-4. 'form_autofill_diagnostics': ""
-5. 'messaging_clarity_diagnostics': ""
-6. 'headline_focus_diagnostics': ""
-7. 'offer_transparency_diagnostics': ""
-
-Please ensure that each variable contains a brief analysis. Return only the dictionary in Python format, ready to use as a variable in one line (without any other text).
+    {{
+    'cta_button_placement_diagnostics': "",
+    'cta_clarity_diagnostics': "",
+    'form_simplicity_diagnostics': "",
+    'messaging_clarity_diagnostics': "",
+    'headline_focus_diagnostics': "",
+    'offer_transparency_diagnostics': "",
+    'overall_rating': 0  # Provide an overall optimization rating between 0 and 100.
+    }}
 
     HTML Content for Analysis:
     {html_content}
     """.strip()
 
+    return prompt_text
+
 
 def analyze_website(html_content):
+    """
+    Uses OpenAI's API to analyze the HTML content of a website's landing page for conversion rate optimization.
+    """
     prompt = generate_analysis_prompt(html_content)
-    print('Prompt:\n\n' + prompt)
+    print('Prompt for Analysis:\n\n' + prompt)
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system",
-             "content": "You are an online inspection tool assistant, skilled in analysing websites and generating a diagnosis and a overall rating according to an effective Lead Magnet. You only return the dictionary asked, without any added text."},
+             "content": "You are an AI designed to assist in analyzing landing pages for optimization. Your analysis should help in identifying areas for improvement to enhance conversion rates, and you should provide an overall optimization rating."},
             {"role": "user", "content": prompt}
         ]
     )
+
+    # Parsing the response to a Python dictionary
     parsed_dict = ast.literal_eval(completion.choices[0].message.content)
     return parsed_dict

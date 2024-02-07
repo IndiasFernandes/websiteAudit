@@ -1,8 +1,7 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from report_generator.models import WebsiteReport
-from api.bot_gpt import bot_onlineInspectionToolAssistant
+from .models import WebsiteReport
 from .bot_analysis import analyze_website
 from .serializers import ItemSerializer
 from rest_framework import status
@@ -27,6 +26,7 @@ def getData(request):
 @api_view(['POST'])
 def addItem(request):
     print(request.data)
+    logger.info(request.data)
     logger.info("Received POST request to add a new website report.")
     print("Received POST request to add a new website report.")
     serializer = ItemSerializer(data=request.data)
@@ -51,7 +51,7 @@ def addItem(request):
         logger.info(f"Fetching HTML content for URL: {saved_item.url}")
         print(f"Fetching HTML content for URL: {saved_item.url}")
         html_content = fetch_website_html(saved_item.url)
-        logger.debug("HTML content fetched successfully.")
+        logger.debug("HTML content fetched successfully:\n\n{html_content}\n\n")
         print(f"HTML content fetched successfully:\n\n{html_content}\n\n")
 
         # Analyzing website
@@ -73,24 +73,15 @@ def addItem(request):
             'E-mail': saved_item.email,
 
             'Company Name': saved_item.name_company,
-            'Industry': saved_item.industry,
-            'Product/Service': saved_item.service,
 
-            'Overall Rating': None,
+            'overall_rating': analysis_results['overall_rating'],
 
-            'CTA Button Placement Rating': None,
-            'CTA Clarity Rating': None,
-            'Form Simplicity Rating': None,  # Assuming these are directly from saved_item
-            'Form Autofill Rating': None,
-            'Messaging Clarity Rating': None,
-            'Headline Focus Rating': None,
-
-            'CTA Button Placement Diagnostics': analysis_results['cta_button_placement_diagnostics'],  # Placeholder for actual diagnostics
-            'CTA Clarity Diagnostics': analysis_results['cta_clarity_diagnostics'],
-            'Form Simplicity Diagnostics': analysis_results['form_simplicity_diagnostics'],
-            'Form Autofill Diagnostics': analysis_results['form_autofill_diagnostics'],
-            'Messaging Clarity Diagnostics': analysis_results['messaging_clarity_diagnostics'],
-            'Headline Focus Diagnostics': analysis_results['headline_focus_diagnostics'],
+            'cta_button_placement_diagnostics': analysis_results['cta_button_placement_diagnostics'],  # Placeholder for actual diagnostics
+            'cta_clarity_diagnostics': analysis_results['cta_clarity_diagnostics'],
+            'form_simplicity_diagnostics': analysis_results['form_simplicity_diagnostics'],
+            'messaging_clarity_diagnostics': analysis_results['messaging_clarity_diagnostics'],
+            'headline_focus_diagnostics': analysis_results['headline_focus_diagnostics'],
+            'offer_transparency_diagnostics': analysis_results['offer_transparency_diagnostics'],
 
 
             'Social Proof': None,
