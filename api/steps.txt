@@ -1,4 +1,0 @@
-Setting Up the API App
-Views: Create views in the api app to handle incoming API requests. These views will invoke analysis functions from the website_analyzer app and return the results.
-
-URLs: Define URL patterns in the api app that map to the views handling API requests.

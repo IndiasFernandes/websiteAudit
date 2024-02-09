@@ -1,13 +1,17 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from utils import web_scrapper
+from .forms import ContactForm
 from .models import WebsiteReport
 from .bot_analysis import analyze_website
 from .serializers import ItemSerializer
 from rest_framework import status
 import logging
+from django.http import HttpResponse
+from utils import take_screenshot
 
-from .web_scrapper import fetch_website_html
+from utils.web_scrapper import fetch_website_html
 
 logger = logging.getLogger(__name__)
 
@@ -102,7 +106,25 @@ def addItem(request):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-def form(request):
+def home(request):
     logger.info("Rendering form template.")
     print("Rendering form template.")
-    return render(request, 'test.html')
+    return render(request, 'home.html')
+
+
+
+def screenshot_view(request):
+    url = request.GET.get('url')  # Get URL from request
+    if url:
+        message = take_screenshot(url)
+        return HttpResponse(f'Screenshot taken: {message}')
+    else:
+        return HttpResponse('No URL provided', status=400)
+
+def web_scraper_view(request):
+    url = request.GET.get('url')  # Get URL from request
+    if url:
+        cleaned_html = fetch_website_html(url)
+        return HttpResponse(cleaned_html, content_type='text/html')
+    else:
+        return HttpResponse('No URL provided', status=400)

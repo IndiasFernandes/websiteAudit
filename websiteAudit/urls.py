@@ -20,7 +20,6 @@ from django.contrib import admin
 from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-
 from websiteAudit import views
 
 # These lines import necessary modules and functions.
@@ -28,9 +27,12 @@ from websiteAudit import views
 # 'path' is imported from 'django.urls' to define URL patterns.
 
 urlpatterns = [
-    path('api/', include('api.urls')),
+    path('api/', include(('api.urls', 'api'), namespace='api')),
     path('admin/', admin.site.urls),
     path('stdout/', views.display_stdout, name='display_stdout'),
+    path('form/', views.form_view, name='form'),
+    path('screenshot/', views.take_screenshot_view, name='take_screenshot'),
+    path('web-scraper/', views.web_scraper_view, name='web_scraper')
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

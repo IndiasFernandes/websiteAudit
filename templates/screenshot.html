@@ -1,0 +1,41 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="mb-4 text-center">Take a Screenshot</h2>
+            <form id="screenshotForm" method="post" class="needs-validation" novalidate>
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" name="url" class="form-control" placeholder="Enter URL here" value="http://www.innerflect.com" required>
+                </div>
+                <div class="d-grid gap-2">
+                    <button type="submit" class="btn btn-primary btn-block">Take Screenshot</button>
+                </div>
+            </form>
+            <div id="screenshotStatus"></div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#screenshotForm').submit(function(event) {
+        event.preventDefault();
+        var url = $(this).find('input[name="url"]').val(); // Get the URL input
+        var actionUrl = "{% url 'take_screenshot' %}?url=" + encodeURIComponent(url);
+
+        $.get(actionUrl, function(data) {
+            if(data.screenshotUrl) {
+                $('#screenshotStatus').html('<img src="' + data.screenshotUrl + '" alt="Screenshot" class="img-fluid"/>');
+            } else {
+                $('#screenshotStatus').html('<p>Failed to take screenshot.</p>');
+            }
+        }).fail(function() {
+            $('#screenshotStatus').html('<p>Error taking screenshot.</p>');
+        });
+    });
+});
+
+</script>
+{% endblock %}
