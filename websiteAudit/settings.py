@@ -40,7 +40,7 @@ DEBUG = True
 # DEBUG is a boolean that turns on/off debug mode. It should be False in production for security reasons.
 
 
-ALLOWED_HOSTS = ['145.224.125.138', 'innerflect.com', '127.0.0.1', 'noticetheelephant.com']
+ALLOWED_HOSTS = ['localhost', '145.224.125.138', 'innerflect.com', '127.0.0.1', 'noticetheelephant.com']
 # ALLOWED_HOSTS is a list of strings representing the host/domain names that this Django site can serve.
 
 
@@ -55,10 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'report_generator',
-    'website_analyzer',
     'api',
     'corsheaders',
+    'widget_tweaks',
 ]
 
 # MIDDLEWARE is a list of middleware classes that are run during request/response processing.

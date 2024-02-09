@@ -1,4 +1,0 @@
-Developing the Report Generation App
-Report Logic: Implement functions to format the analysis results into reports. You can use Python libraries for generating PDFs or HTML reports.
-
-Models: Create models to store report templates or generated reports, if necessary.
