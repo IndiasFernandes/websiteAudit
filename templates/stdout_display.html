@@ -6,5 +6,9 @@
 <body>
     <h1>Stdout Content</h1>
     <pre>{{ stdout_content }}</pre>
+    <form action="{% url 'clear_stdout' %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Clear Stdout</button>
+    </form>
 </body>
 </html>
