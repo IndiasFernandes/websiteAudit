@@ -45,9 +45,16 @@ def addItem(request):
         logger.debug(f"Retrieved saved website report with PK: {serializer.instance.pk}")
         print(f"Retrieved saved website report with PK: {serializer.instance.pk}")
 
-        # Constructing new image URL
-        parts = request.build_absolute_uri(saved_item.screenshot.url).split('/media/', 1)
-        new_url = f"http://www.innerflect.com/websiteAudit/media/{parts[1]}"
+        # Constructing new image URL dynamically based on the request
+        if saved_item.screenshot:
+            parts = request.build_absolute_uri(saved_item.screenshot.url).split('/media/', 1)
+            if len(parts) > 1:
+                new_url = request.build_absolute_uri('/media/') + parts[1]
+            else:
+                new_url = request.build_absolute_uri(saved_item.screenshot.url)
+        else:
+            new_url = None
+
         logger.debug(f"Constructed new image URL: {new_url}")
         print(f"Constructed new image URL: {new_url}")
 
@@ -78,15 +85,13 @@ def addItem(request):
 
             'Company Name': saved_item.name_company,
 
-            'overall_rating': analysis_results['overall_rating'],
+            'overall_grade': analysis_results['overall_grade'],
 
-            'cta_button_placement_diagnostics': analysis_results['cta_button_placement_diagnostics'],  # Placeholder for actual diagnostics
-            'cta_clarity_diagnostics': analysis_results['cta_clarity_diagnostics'],
-            'form_simplicity_diagnostics': analysis_results['form_simplicity_diagnostics'],
-            'messaging_clarity_diagnostics': analysis_results['messaging_clarity_diagnostics'],
-            'headline_focus_diagnostics': analysis_results['headline_focus_diagnostics'],
-            'offer_transparency_diagnostics': analysis_results['offer_transparency_diagnostics'],
-
+            'cta_button_placement': analysis_results['cta_button_placement'],
+            'cta_clarity': analysis_results['cta_clarity'],
+            'headline_focus': analysis_results['headline_focus'],
+            'messaging_clarity': analysis_results['messaging_clarity'],
+            'form_diagnostics': analysis_results['form_diagnostics'],
 
             'Social Proof': None,
             'Company Info Presence': None,

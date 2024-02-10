@@ -36,7 +36,7 @@ pyppeteer==1.0.2
 PyRect==0.2.0
 PyScreeze==0.1.30
 PySocks==1.7.1
-python-dotenv==1.0.1
+python-dotenv
 pytweening==1.0.7
 pytz==2023.3.post1
 requests==2.31.0
@@ -54,3 +54,4 @@ urllib3
 websockets==10.4
 wsproto==1.2.0
 zipp==3.17.0
+langchain[llms]

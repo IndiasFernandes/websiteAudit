@@ -22,15 +22,14 @@ class WebsiteReport(models.Model):
     screenshot = models.ImageField(upload_to='', blank=True, null=True)
 
     # Overall Rating
-    overall_rating = models.FloatField(blank=True, null=True)
+    overall_grade = models.FloatField(blank=True, null=True)
 
     # Diagnostics
-    cta_button_placement_diagnostics = models.CharField(blank=True, null=True, max_length=100)
-    cta_clarity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
-    form_simplicity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
-    messaging_clarity_diagnostics = models.CharField(blank=True, null=True, max_length=100)
-    headline_focus_diagnostics = models.CharField(blank=True, null=True, max_length=100)
-    offer_transparency_diagnostics = models.CharField(blank=True, null=True, max_length=100)
+    cta_button_placement = models.CharField(blank=True, null=True, max_length=1000)
+    cta_clarity = models.CharField(blank=True, null=True, max_length=1000)
+    headline_focus = models.CharField(blank=True, null=True, max_length=1000)
+    messaging_clarity = models.CharField(blank=True, null=True, max_length=1000)
+    form_diagnostics = models.CharField(blank=True, null=True, max_length=1000)
 
     # Trust Signals
     social_proof = models.TextField(blank=True, null=True)  # Testimonials, reviews, etc.
