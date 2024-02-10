@@ -66,9 +66,12 @@ $(document).ready(function() {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             },
             success: function(response) {
-                // Handle success response
                 console.log("Data successfully submitted:", response);
-                $("#submissionStatus").html("<p>Submission successful!</p><p>Response:</br></br>" + JSON.stringify(response) + "</p>");
+                var formattedResponse = "<h3>Submission Successful!</h3>";
+                Object.keys(response).forEach(function(key) {
+                    formattedResponse += "<p><strong>" + key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ') + ": </strong>" + response[key] + "</p>";
+                });
+                $("#submissionStatus").html(formattedResponse);
             },
             error: function(xhr, status, error) {
                 // Handle error response
