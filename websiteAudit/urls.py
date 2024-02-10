@@ -32,7 +32,8 @@ urlpatterns = [
     path('stdout/', views.display_stdout, name='display_stdout'),
     path('form/', views.form_view, name='form'),
     path('screenshot/', views.take_screenshot_view, name='take_screenshot'),
-    path('web-scraper/', views.web_scraper_view, name='web_scraper')
+    path('web-scraper/', views.web_scraper_view, name='web_scraper'),
+    path('clear-stdout/', views.clear_stdout, name='clear_stdout'),
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

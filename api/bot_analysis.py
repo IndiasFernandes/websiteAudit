@@ -3,7 +3,7 @@ import os
 import ast
 
 # Load the API key from a config file
-API_KEY = open('config', 'r').read()
+API_KEY = open('config', 'r').read().strip()
 client = openai.OpenAI(api_key=API_KEY)
 
 def generate_analysis_prompt(html_content):
