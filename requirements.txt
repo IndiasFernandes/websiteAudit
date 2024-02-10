@@ -28,9 +28,9 @@ pydantic_core==2.14.6
 pyee==8.2.2
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
-pyobjc-core==10.1
-pyobjc-framework-Cocoa==10.1
-pyobjc-framework-Quartz==10.1
+#pyobjc-core==10.1
+#pyobjc-framework-Cocoa==10.1
+#pyobjc-framework-Quartz==10.1
 pyperclip==1.8.2
 pyppeteer==1.0.2
 PyRect==0.2.0
@@ -50,7 +50,7 @@ tqdm==4.66.1
 trio==0.24.0
 trio-websocket==0.11.1
 typing_extensions==4.9.0
-urllib3==2.1.0
+urllib3
 websockets==10.4
 wsproto==1.2.0
 zipp==3.17.0
