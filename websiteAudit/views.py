@@ -2,6 +2,7 @@ from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 import os
 from api.forms import ContactForm
+from utils.generate_pdf import generate_pdf
 from utils.web_scrapper import fetch_website_html
 from utils.take_screenshot import take_screenshot
 from websiteAudit import settings
@@ -52,3 +53,28 @@ def clear_stdout(request):
     with open(log_file_path, 'w') as log_file:
         log_file.truncate()
     return HttpResponseRedirect(reverse('display_stdout'))  # Redirect back to the stdout display page
+
+
+def generate_pdf_view(request):
+    if 'url' in request.GET:
+        url = request.GET['url']
+        # Assume fetch_website_html(url) fetches and returns the desired text/content
+        content = fetch_website_html(url)
+
+        # Define a suitable filename, perhaps based on the URL or a timestamp
+        filename = "your_filename"  # Define how you want to name your file
+
+        # Call your PDF generation function (this part remains largely unchanged)
+        generate_pdf(filename)  # Your existing function to generate the PDF
+
+        # Define the full path to the PDF
+        pdf_path = "./media/" + filename + ".pdf"
+
+        # Open the PDF file in binary mode and return it in the response
+        with open(pdf_path, 'rb') as pdf:
+            response = HttpResponse(pdf.read(), content_type='application/pdf')
+            response['Content-Disposition'] = 'attachment; filename="' + filename + '.pdf"'
+            return response
+
+    # Fallback in case the URL is not provided
+    return render(request, 'pdf_creator.html')
