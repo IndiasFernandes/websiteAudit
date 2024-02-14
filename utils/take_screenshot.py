@@ -1,83 +1,56 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse
-import urllib.parse
-
-from django.conf import settings
 import os
 import logging
+from django.conf import settings
 
 logger = logging.getLogger(__name__)
 
 # Function to get the domain from a URL
 def get_domain_from_url(url):
-    # Parse the URL to extract the domain
     parsed_url = urlparse(url)
     domain = parsed_url.netloc
-
-    # Remove 'www.' if it exists in the domain
     if domain.startswith('www.'):
-        domain = domain[4:]  # Remove the first 4 characters 'www.'
-
+        domain = domain[4:]
     return domain
 
-# # Function to take a screenshot of a web page using Thumb.io
-# def take_screenshot(url):
-#     logger.error('Taking screenshot of ' + url)
-#
-#     # Your Thumb.io API key
-#     api_key = '70136-screenshot'
-#
-#     # URL-encode the website URL
-#     encoded_url = urllib.parse.quote_plus(url)
-#
-#     # Construct the Thumb.io URL
-#     thumb_io_url = f'https://image.thum.io/get/auth/{api_key}/' + url;
-#
-#     # Construct the file path using MEDIA_ROOT
-#     filename = get_domain_from_url(url) + '.png'
-#     filepath = os.path.join(settings.MEDIA_ROOT, filename)
-#
-#     # Use Thumb.io URL to save the screenshot - here you might download the image and save it locally
-#     # For example, using requests (ensure you have 'requests' installed: pip install requests)
-#     import requests
-#     response = requests.get(thumb_io_url)
-#     if response.status_code == 200:
-#         with open(filepath, 'wb') as f:
-#             f.write(response.content)
-#         logger.error(f'Saving screenshot as {filepath}')
-#     else:
-#         logger.error(f'Failed to capture screenshot for {url}. Status code: {response.status_code}')
-#
-#     # Note: In production, consider handling exceptions and errors more gracefully
-
-
-# Function to take a screenshot of a web page using Thumb.io
+# Function to take a mobile screenshot of a webpage
 def take_screenshot(url):
-    logger.error('Taking screenshot of ' + url)
+    logger.error('Taking mobile screenshot of ' + url)
 
-    # Your Thumb.io API key
-    api_key = '70136-screenshot'
+    # Configure mobile emulation
+    mobile_emulation = {
+        "deviceMetrics": {"width": 375, "height": 612, "pixelRatio": 3.0},
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+    }
 
-    # URL-encode the website URL
-    encoded_url = urllib.parse.quote_plus(url)
+    # Chrome options including mobile emulation and headless mode
+    chrome_options = Options()
+    chrome_options.add_experimental_option("mobileEmulation", mobile_emulation)
+    chrome_options.add_argument('--headless')  # Run headless Chrome
 
-    # Construct the Thumb.io URL
-    thumb_io_url = f'https://image.thum.io/get/auth/{api_key}/' + url;
+    # Specify the path to chromedriver.exe (manually download and specify the correct path)
+    chrome_driver_path = os.path.join(settings.BASE_DIR, '/screenshot/', 'chromedriver')
 
-    # Construct the file path using MEDIA_ROOT
-    filename = get_domain_from_url(url) + '.png'
-    filepath = os.path.join(settings.MEDIA_ROOT, filename)
+    # Initialize the WebDriver with the specified ChromeDriver path
+    driver = webdriver.Chrome(options=chrome_options)
 
-    # Use Thumb.io URL to save the screenshot - here you might download the image and save it locally
-    # For example, using requests (ensure you have 'requests' installed: pip install requests)
-    import requests
-    response = requests.get(thumb_io_url)
-    if response.status_code == 200:
-        with open(filepath, 'wb') as f:
-            f.write(response.content)
-        logger.error(f'Saving screenshot as {filepath}')
-        return f'{settings.MEDIA_URL}{filename}'
-    else:
-        logger.error(f'Failed to capture screenshot for {url}. Status code: {response.status_code}')
+    try:
+        # Open the URL
+        driver.get(url)
+
+        # Construct the file path using MEDIA_ROOT
+        filename = get_domain_from_url(url) + '.png'
+        filepath = os.path.join(settings.MEDIA_ROOT, filename)
+
+        # Take a screenshot and save it
+        driver.get_screenshot_as_file(filepath)
+        logger.error(f'Saving mobile screenshot as {filepath}')
+        return os.path.join(settings.MEDIA_URL, filename)
+    except Exception as e:
+        logger.error(f'Failed to capture mobile screenshot for {url}. Error: {e}')
         return None
-
-    # Note: In production, consider handling exceptions and errors more gracefully
+    finally:
+        # Clean up: close the browser
+        driver.quit()
