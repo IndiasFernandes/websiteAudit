@@ -54,3 +54,5 @@ def take_screenshot(url):
     finally:
         # Clean up: close the browser
         driver.quit()
+
+ # done
