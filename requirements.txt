@@ -7,7 +7,7 @@ beautifulsoup4==4.12.3
 certifi==2023.11.17
 charset-normalizer==3.3.2
 distro==1.9.0
-Django==4.2.9
+Django==4.2.10
 django-cors-headers
 django-widget-tweaks==1.5.0
 djangorestframework==3.14.0
