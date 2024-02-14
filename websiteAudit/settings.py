@@ -40,7 +40,7 @@ DEBUG = True
 # DEBUG is a boolean that turns on/off debug mode. It should be False in production for security reasons.
 
 
-ALLOWED_HOSTS = ['localhost', '145.224.125.138', 'innerflect.com', '127.0.0.1', 'noticetheelephant.com']
+ALLOWED_HOSTS = ['16.170.215.209', 'localhost', '145.224.125.138', '127.0.0.1', 'noticetheelephant.com']
 # ALLOWED_HOSTS is a list of strings representing the host/domain names that this Django site can serve.
 
 

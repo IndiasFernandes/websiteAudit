@@ -5,7 +5,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <h2 class="mb-4 text-center">Contact Us</h2>
+            <h2 class="mb-4 text-center">Form Test</h2>
             <form id="myForm" method="post" class="needs-validation" novalidate>
                 {% csrf_token %}
                 <div class="form-group">
@@ -33,10 +33,11 @@
                     {{ form.accept_terms.label_tag }}
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" data-action="https://innerflect.com/websiteAudit/api/addData/" class="btn btn-primary btn-block" id="submitApi">Submit to API</button>
+                    <button type="submit" data-action="http://16.170.215.209:8000/api/addData/" class="btn btn-primary btn-block" id="submitApi">Submit to API</button>
                     <button type="submit" data-action="http://localhost:8000/api/addData/" class="btn btn-secondary btn-block" id="submitLocalhost">Submit to Localhost</button>
                 </div>
             </form>
+            <br>
             <div id="submissionStatus"></div>
         </div>
     </div>
@@ -66,9 +67,12 @@ $(document).ready(function() {
                 xhr.setRequestHeader("X-CSRFToken", csrftoken);
             },
             success: function(response) {
-                // Handle success response
                 console.log("Data successfully submitted:", response);
-                $("#submissionStatus").html("<p>Submission successful!</p><p>Response:</br></br>" + JSON.stringify(response) + "</p>");
+                var formattedResponse = "<h3>Submission Successful!</h3>";
+                Object.keys(response).forEach(function(key) {
+                    formattedResponse += "<p><strong>" + key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' ') + ": </strong>" + response[key] + "</p>";
+                });
+                $("#submissionStatus").html(formattedResponse);
             },
             error: function(xhr, status, error) {
                 // Handle error response

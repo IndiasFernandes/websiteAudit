@@ -9,7 +9,7 @@
                     <input type="text" name="url" class="form-control" placeholder="Enter URL here" value="http://www.noticetheelephant.com" required>
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-primary btn-block">Fetch Content</button>
+                    <button type="button" id="generatePdf" class="btn btn-primary btn-block">Generate PDF</button>
                 </div>
             </form>
             <div id="contentStatus"></div>
@@ -24,16 +24,26 @@ $(document).ready(function() {
         event.preventDefault();  // Prevent the default form submission.
 
         var formData = $(this).serialize();
-        var actionUrl = "{% url 'web_scraper' %}" + "?" + formData; // Construct the action URL with query parameters.
+        var actionUrl = "{% url 'web_scraper' %}" + "?" + formData; // Adjusted for clarity
 
         // Fetch content or response.
         $.get(actionUrl, function(response) {
-            // Display the fetched content within the 'contentStatus' div.
-            // 'response' is assumed to be the HTML content returned from your view.
             $('#contentStatus').html(response);
         }).fail(function() {
             $('#contentStatus').html('<p>Error fetching content.</p>');
         });
+    });
+
+    // Event listener for the PDF generation button
+    $('#generatePdf').click(function() {
+        var url = $('input[name="url"]').val(); // Get the URL from the input
+        if (url) {
+            // Replace 'generate_pdf' with the correct URL name for PDF generation
+            var pdfUrl = "{% url 'generate_pdf' %}" + "?url=" + encodeURIComponent(url);
+            window.location = pdfUrl; // Redirect to the backend view that generates and sends the PDF
+        } else {
+            alert('Please enter a URL.');
+        }
     });
 });
 </script>
