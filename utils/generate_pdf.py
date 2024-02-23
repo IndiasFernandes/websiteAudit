@@ -76,6 +76,3 @@ Your details: {name} {last_name}, {email}
     report.build([table1, table2])
 
     print(f"Table created and saved to {pdf_path}")
-
-# Example usage
-generate_pdf("example_report")
