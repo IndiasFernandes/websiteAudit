@@ -17,7 +17,8 @@ logger = logging.getLogger(__name__)
 
 
 @api_view(['GET'])
-def getData(request):
+def get_reports(request):
+
     logger.info("Starting GET request to fetch all website reports.")
     print("Starting GET request to fetch all website reports.")
     items = WebsiteReport.objects.all()
@@ -28,11 +29,10 @@ def getData(request):
 
 
 @api_view(['POST'])
-def addItem(request):
-    print(request.data)
-    logger.info(request.data)
-    logger.info("Received POST request to add a new website report.")
-    print("Received POST request to add a new website report.")
+def add_report(request):
+
+    logger.info("Starting POST request to add a new website report.")
+    print("Starting POST request to add a new website report.")
     serializer = ItemSerializer(data=request.data)
 
     if serializer.is_valid():
@@ -44,6 +44,9 @@ def addItem(request):
         saved_item = WebsiteReport.objects.get(pk=serializer.instance.pk)
         logger.debug(f"Retrieved saved website report with PK: {serializer.instance.pk}")
         print(f"Retrieved saved website report with PK: {serializer.instance.pk}")
+
+
+        # Take a screenshot of the website - in Models TODO: Put it in a separate function
 
         # Constructing new image URL dynamically based on the request
         if saved_item.screenshot:

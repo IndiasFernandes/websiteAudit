@@ -1,7 +1,7 @@
 from django.db import models
 import os
 from django.conf import settings
-from screenshot.takeScreenshot import get_domain_from_url, take_screenshot
+from utils.take_screenshot import get_domain_from_url, take_screenshot
 from django.core.files import File
 
 
