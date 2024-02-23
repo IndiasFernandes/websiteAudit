@@ -40,7 +40,7 @@ DEBUG = True
 # DEBUG is a boolean that turns on/off debug mode. It should be False in production for security reasons.
 
 
-ALLOWED_HOSTS = ['16.170.215.209', 'localhost', '145.224.125.138', '127.0.0.1', 'noticetheelephant.com']
+ALLOWED_HOSTS = ['16.170.215.209', 'localhost', '145.224.125.138', '127.0.0.1', 'noticetheelephant.com', 'app.ai-leadmagnets.com']
 # ALLOWED_HOSTS is a list of strings representing the host/domain names that this Django site can serve.
 
 
@@ -78,6 +78,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     'https://noticetheelephant.com',# Add the origin of your HTML page
     'https://145.224.125.138',
+    'https://app.ai-leadmagnets.com'
 ]
 
 # ROOT_URLCONF is a string representing the dotted path to the URL configuration module for the project.
