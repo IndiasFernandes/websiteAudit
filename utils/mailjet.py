@@ -2,88 +2,87 @@ from dotenv import load_dotenv
 from mailjet_rest import Client
 import os
 
-load_dotenv()
+def create_and_update_contact(response_data):
+    load_dotenv()
 
-MAILJET_API = os.getenv("MAILJET_API")
-MAILJET_SECRET = os.getenv("MAILJET_SECRET")
+    MAILJET_API = os.getenv("MAILJET_API")
+    MAILJET_SECRET = os.getenv("MAILJET_SECRET")
 
-mailjet = Client(auth=(MAILJET_API, MAILJET_SECRET))
+    mailjet = Client(auth=(MAILJET_API, MAILJET_SECRET))
 
-# Dummy data for demonstration
-contact_info = {
-    'Email': 'example2@example.com',  # This would be the unique identifier for the contact
-    'CompanyName': 'Dummy Company',
-    'FirstName': 'John',
-    'LastName': 'Doe',
-    'URL': 'https://www.example.com',
-    'OverallGrade': 'A',
-    'CTAButtonPlacement': 'Top',
-    'CTAClarity': 'Clear',
-    'HeadlineFocus': 'Focused',
-    'MessagingClarity': 'Very Clear',
-    'FormDiagnostics': 'No Issues'
-}
-
-
-data = {
-  'IsExcludedFromCampaigns': "true",
-  'Name': contact_info['FirstName'] + " " + contact_info['LastName'],
-  'Email': contact_info['Email'],
-}
-
-# Create a new contact
-result = mailjet.contact.create(data=data)
-print(result.json())
-print(f"Status Code: {result.status_code}")
-print(f"Contact created with ID:{result.json().get('Data')[0].get('ID')}")
-
-# Assuming result.json() contains the newly created contact details
-contact_id = result.json().get('Data')[0].get('ID')
-
-# Retrieve the List ID for "LM-website-CRO-audit"
-response = mailjet.contactslist.get(filters={'Name': 'LM-website-CRO-audit'})
-lists = response.json().get('Data', [])
-print(f"Found {len(lists)} lists")
-print(f"List ID: {lists[0].get('ID')}")
-
-if lists:
-    list_id = lists[0]['ID']
-    # Prepare data to add contact to the list
+    # Create a new contact with the basic details
     data = {
-        'ContactsLists': [{
-            'ListID': list_id,
-            'Action': "addnoforce"  # Use "addforce" if you want to force add the contact
-        }]
+        'IsExcludedFromCampaigns': "true",
+        'Name': response_data['First Name'] + " " + response_data['Last Name'],
+        'Email': response_data['E-mail'],
     }
-    # Use the contact's email as an identifier to manage list membership
-    result = mailjet.contact_managecontactslists.create(id=contact_info['Email'], data=data)
-    print("Add to List Status:", result.status_code)
-    print(result.json())
-else:
-    print("List not found.")
+    result = mailjet.contact.create(data=data)
+    print(f"Contact creation status code: {result.status_code}")
+    if result.status_code not in [200, 201]:
+        print("Failed to create contact.")
+        return
 
-# Update contact with custom properties
-if result.status_code == 201:
-    contact_email = contact_info['Email']
+    # Retrieve the List ID for "LM-website-CRO-audit"
+    response = mailjet.contactslist.get(filters={'Name': 'LM-website-CRO-audit'})
+    lists = response.json().get('Data', [])
+    if lists:
+        list_id = lists[0]['ID']
+        # Add contact to the list
+        data = {
+            'ContactsLists': [{
+                'ListID': list_id,
+                'Action': "addnoforce"
+            }]
+        }
+        result = mailjet.contact_managecontactslists.create(id=response_data['E-mail'], data=data)
+        print(f"Add to List Status: {result.status_code}")
+    else:
+        print("List 'LM-website-CRO-audit' not found.")
+
+    # Update contact with custom properties
     properties_data = {
         'Data': [
-            {'Name': 'companyname', 'Value': contact_info['CompanyName']},
-            {'Name': 'firstname', 'Value': contact_info['FirstName']},
-            {'Name': 'lastname', 'Value': contact_info['LastName']},
-            {'Name': 'url', 'Value': contact_info['URL']},
-            {'Name': 'overallgrade', 'Value': contact_info['OverallGrade']},
-            {'Name': 'ctabuttonplacement', 'Value': contact_info['CTAButtonPlacement']},
-            {'Name': 'ctaclarity', 'Value': contact_info['CTAClarity']},
-            {'Name': 'headlinefocus', 'Value': contact_info['HeadlineFocus']},
-            {'Name': 'messagingclarity', 'Value': contact_info['MessagingClarity']},
-            {'Name': 'formdiagnostics', 'Value': contact_info['FormDiagnostics']},
-            {'Name': 'country', 'Value': contact_info.get('Country', '')},
-            {'Name': 'language', 'Value': contact_info.get('Language', '')},
-            {'Name': 'newsletter_sub', 'Value': contact_info.get('Newsletter_sub', 'False')},
+            {'Name': 'companyname', 'Value': response_data.get('Company Name', '')},
+            {'Name': 'firstname', 'Value': response_data.get('First Name', '')},
+            {'Name': 'lastname', 'Value': response_data.get('Last Name', '')},
+            {'Name': 'url', 'Value': response_data.get('Url', '')},
+            {'Name': 'overallgrade', 'Value': response_data.get('overall_grade', '')},
+            {'Name': 'ctabuttonplacement', 'Value': response_data.get('cta_button_placement', '')},
+            {'Name': 'ctaclarity', 'Value': response_data.get('cta_clarity', '')},
+            {'Name': 'headlinefocus', 'Value': response_data.get('headline_focus', '')},
+            {'Name': 'messagingclarity', 'Value': response_data.get('messaging_clarity', '')},
+            {'Name': 'formdiagnostics', 'Value': response_data.get('form_diagnostics', '')},
+            # Include additional properties as needed
+            # {'Name': 'property_name', 'Value': response_data.get('field_name', '')},
         ]
     }
-    result = mailjet.contactdata.update(id=contact_email, data=properties_data)
-    print("Update Contact Properties Status:", result.status_code)
+    result = mailjet.contactdata.update(id=response_data['E-mail'], data=properties_data)
     print(result.json())
-else:
-    print("Failed to create contact:", result.status_code)
+    print(f"Update Contact Properties Status: {result.status_code}")
+
+# Example usage
+response_data = {
+    # Assuming new_url and analysis_results are defined elsewhere
+    'image_url': 'http://example.com/image.jpg',
+    'Date': '2020-01-01 12:00:00',
+
+    'First Name': 'John',
+    'Last Name': 'Doe',
+    'Url': 'https://www.example.com',
+    'E-mail': 'example@example.com',
+
+    'Company Name': 'Dummy Company',
+
+    'overall_grade': 'A',
+    'cta_button_placement': 'Top',
+    'cta_clarity': 'Clear',
+    'headline_focus': 'Focused',
+    'messaging_clarity': 'Very Clear',
+    'form_diagnostics': 'No Issues',
+
+    'Social Proof': None,
+    'Company Info Presence': None,
+
+    # Add any other fields you want to include
+    'other_field': 'other_value',
+}

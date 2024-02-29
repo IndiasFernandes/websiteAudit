@@ -95,3 +95,6 @@ def generate_pdf_view(request):
 
     # Fallback in case the URL is not provided
     return render(request, 'pdf_creator.html')
+
+def homepage_view(request):
+    return render(request, 'home.html')

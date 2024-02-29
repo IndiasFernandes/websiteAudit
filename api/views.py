@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from utils import web_scrapper
+from utils.mailjet import create_and_update_contact
 from .forms import ContactForm
 from .models import WebsiteReport
 from .bot_analysis import analyze_website
@@ -102,6 +103,12 @@ def add_report(request):
             # Add any other fields you want to include
             'other_field': 'other_value',
         }
+
+        # Send the response data to Mailjet
+        create_and_update_contact(response_data)
+        logger.info(f"Response data sent to Mailjet: {response_data}")
+        print(f"Response data sent to Mailjet: {response_data}")
+
 
         logger.info(f"Constructed response data successfully: {response_data}")
         print(f"Constructed response data successfully: {response_data}")
