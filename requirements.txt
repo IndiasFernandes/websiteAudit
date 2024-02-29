@@ -9,3 +9,4 @@ selenium
 python-dotenv
 langchain
 langchain_openai
+mailjet_rest

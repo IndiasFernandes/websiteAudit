@@ -1,0 +1,39 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Not Found: /generate_pdf/undefined
+Watching for file changes with StatReloader
+Not Found: /generate_pdf/undefined
+Watching for file changes with StatReloader
+Not Found: /generate_pdf/undefined
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/websiteAudit/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /generate_pdf/
+Bad Request: /generate_pdf/
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/websiteAudit/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /generate_pdf/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/clickjacking.py", line 58, in wrapper_view
+    resp = view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/websiteAudit/views.py", line 75, in generate_pdf_view
+    pdf_status = generate_pdf(filename, content)  # Ensure this function takes filename and content
+TypeError: generate_pdf() takes 1 positional argument but 2 were given
+Watching for file changes with StatReloader
+Internal Server Error: /generate_pdf/
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/websiteAudit/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Generating PDF view for URL: http://www.noticetheelephant.com
+Not Found: /generate_pdf/undefined
+Watching for file changes with StatReloader
+Generating PDF view for URL: http://www.noticetheelephant.com
+Not Found: /generate_pdf/undefined

@@ -8,7 +8,11 @@ from utils.take_screenshot import take_screenshot
 from websiteAudit import settings
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+import hashlib
+from django.views.decorators.clickjacking import xframe_options_exempt
+import logging
 
+logging.basicConfig(level=logging.INFO)
 
 def display_stdout(request):
     log_file_path = os.path.join(settings.LOG_DIR, 'stdout.log')
@@ -55,26 +59,39 @@ def clear_stdout(request):
     return HttpResponseRedirect(reverse('display_stdout'))  # Redirect back to the stdout display page
 
 
+@xframe_options_exempt
 def generate_pdf_view(request):
+
     if 'url' in request.GET:
+
         url = request.GET['url']
-        # Assume fetch_website_html(url) fetches and returns the desired text/content
-        content = fetch_website_html(url)
 
-        # Define a suitable filename, perhaps based on the URL or a timestamp
-        filename = "your_filename"  # Define how you want to name your file
+        print("Generating PDF view for URL: ", url)
+        logging.info("Generating PDF view for URL: " + url)
 
-        # Call your PDF generation function (this part remains largely unchanged)
-        generate_pdf(filename)  # Your existing function to generate the PDF
+        # Generate a hash of the URL to use as a filename
+        url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
+        filename = f"{url_hash}.pdf"
+        pdf_path = os.path.join('media', filename)
 
-        # Define the full path to the PDF
-        pdf_path = "./media/" + filename + ".pdf"
+        # Check if the PDF already exists
+        if not os.path.exists(pdf_path):
+            content = fetch_website_html(url)  # Ensure this function properly handles errors
 
-        # Open the PDF file in binary mode and return it in the response
-        with open(pdf_path, 'rb') as pdf:
-            response = HttpResponse(pdf.read(), content_type='application/pdf')
-            response['Content-Disposition'] = 'attachment; filename="' + filename + '.pdf"'
-            return response
+            # Generate PDF only if it doesn't exist
+            pdf_status = generate_pdf(filename)  # Ensure this function takes filename and content
+
+            if not pdf_status:  # Handle PDF generation failure
+                return JsonResponse({'error': 'Failed to generate PDF'}, status=500)
+
+        # At this point, the PDF exists either from before or newly generated
+        try:
+            with open(pdf_path, 'rb') as pdf:
+                response = HttpResponse(pdf.read(), content_type='application/pdf')
+                response['Content-Disposition'] = f'inline; filename="{filename}"'
+                return response
+        except IOError:
+            return JsonResponse({'error': 'PDF file not found'}, status=404)
 
     # Fallback in case the URL is not provided
     return render(request, 'pdf_creator.html')

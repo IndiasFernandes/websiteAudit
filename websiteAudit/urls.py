@@ -27,6 +27,7 @@ from websiteAudit import views
 # 'path' is imported from 'django.urls' to define URL patterns.
 
 urlpatterns = [
+    path('', views.form_view, name='home'),
     path('api/', include(('api.urls', 'api'), namespace='api')),
     path('admin/', admin.site.urls),
     path('stdout/', views.display_stdout, name='display_stdout'),

@@ -37,6 +37,7 @@ def take_screenshot(url):
     chrome_driver_path = os.path.join(settings.BASE_DIR, 'utils', 'chromedriver')
     service = Service(executable_path=chrome_driver_path)
 
+
     # Chrome options including mobile emulation and headless mode
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--headless')
@@ -57,6 +58,10 @@ def take_screenshot(url):
 
         # Take a screenshot and save it
         driver.get_screenshot_as_file(filepath)
+
+        #Save screenshot in current directory
+        driver.save_screenshot(filename)
+
         logger.error(f'Saving mobile screenshot as {filepath}')
         return os.path.join(settings.MEDIA_URL, filename)
     except Exception as e:

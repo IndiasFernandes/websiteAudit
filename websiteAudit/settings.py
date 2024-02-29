@@ -73,12 +73,15 @@ MIDDLEWARE = [
 
 ]
 
+# Added recently, to test
+# SECURE_SSL_REDIRECT = True
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
     'https://noticetheelephant.com',# Add the origin of your HTML page
     'https://145.224.125.138',
-    'https://app.ai-leadmagnets.com'
+    'https://app.ai-leadmagnets.com',
 ]
 
 # ROOT_URLCONF is a string representing the dotted path to the URL configuration module for the project.
