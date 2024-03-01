@@ -20,27 +20,24 @@
 
 <script>
 $(document).ready(function() {
-    $('#webScrapperForm').submit(function(event) {
-        event.preventDefault();  // Prevent the default form submission.
-
-        var formData = $(this).serialize();
-        var actionUrl = "{% url 'web_scraper' %}" + "?" + formData; // Adjusted for clarity
-
-        // Fetch content or response.
-        $.get(actionUrl, function(response) {
-            $('#contentStatus').html(response);
-        }).fail(function() {
-            $('#contentStatus').html('<p>Error fetching content.</p>');
-        });
-    });
-
-    // Event listener for the PDF generation button
     $('#generatePdf').click(function() {
         var url = $('input[name="url"]').val(); // Get the URL from the input
         if (url) {
-            // Replace 'generate_pdf' with the correct URL name for PDF generation
-            var pdfUrl = "{% url 'generate_pdf' %}" + "?url=" + encodeURIComponent(url);
-            window.location = pdfUrl; // Redirect to the backend view that generates and sends the PDF
+            $.ajax({
+                url: "{% url 'generate_pdf' %}", // Ensure this URL is correct and resolves to your view
+                type: "get",
+                data: { url: url },
+                success: function(response) {
+                    // Assuming 'response' contains the URL to the generated PDF
+                    // Update this part based on your actual response structure
+                    var pdfUrl = response.pdfUrl; // Ensure your backend sends a response with the PDF URL
+                    // Display the PDF within an iframe inside 'contentStatus' div
+                    $('#contentStatus').html('<iframe src="' + pdfUrl + '" width="100%" height="500px"></iframe>');
+                },
+                error: function() {
+                    $('#contentStatus').html('<p>Error generating or fetching PDF.</p>');
+                }
+            });
         } else {
             alert('Please enter a URL.');
         }

@@ -12,3 +12,5 @@ media/images/screenshots/
 /venv/
 /env/
 /api/.env
+/utils/.env
+/utils/chromedriver

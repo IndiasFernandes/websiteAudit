@@ -1,0 +1,1401 @@
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '127.0.0.0:8080'. You may need to add '127.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.0:8080'. You may need to add '127.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 15:53:30] "GET / HTTP/1.1" 400 67870
+Invalid HTTP_HOST header: '127.0.0.0:8080'. You may need to add '127.0.0.0' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '127.0.0.0:8080'. You may need to add '127.0.0.0' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 15:53:30] "GET /favicon.ico HTTP/1.1" 400 67795
+[23/Feb/2024 17:07:43] code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\xadªª\x00\x00\x00')
+[23/Feb/2024 17:07:43] You're accessing the development server over HTTPS, but it only supports HTTP.
+[23/Feb/2024 17:07:44] code 400, message Bad request version ('\x8b')
+[23/Feb/2024 17:07:44] You're accessing the development server over HTTPS, but it only supports HTTP.
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:07:44] "GET / HTTP/1.1" 400 66903
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:07:44] "GET /favicon.ico HTTP/1.1" 400 66960
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:10:11] "GET / HTTP/1.0" 400 67353
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:10:11] "GET /favicon.ico HTTP/1.0" 400 67414
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:17:26] "GET / HTTP/1.0" 400 68428
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:17:26] "GET /favicon.ico HTTP/1.0" 400 68362
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /robots.txt
+[23/Feb/2024 17:17:37] "GET /robots.txt HTTP/1.0" 400 67962
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:17:38] "GET / HTTP/1.0" 400 66701
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:18:20] "GET / HTTP/1.0" 400 68641
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:18:21] "GET /favicon.ico HTTP/1.0" 400 68762
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:18:58] "GET / HTTP/1.0" 400 67656
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:18:59] "GET /favicon.ico HTTP/1.0" 400 67873
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:19:10] "GET / HTTP/1.0" 400 67626
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:19:14] "GET / HTTP/1.0" 400 67610
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:19:36] "GET / HTTP/1.0" 400 68048
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:21:16] "GET / HTTP/1.0" 400 68245
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:21:16] "GET /favicon.ico HTTP/1.0" 400 68179
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:21:20] "GET / HTTP/1.0" 400 68243
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:21:21] "GET /favicon.ico HTTP/1.0" 400 68177
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 17:22:40] "GET / HTTP/1.0" 400 66866
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 17:22:40] "GET /favicon.ico HTTP/1.0" 400 66987
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:02:36] "GET / HTTP/1.1" 400 66427
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:02:37] "GET / HTTP/1.1" 400 66427
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:02:38] "GET / HTTP/1.1" 400 66427
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:03:44] "GET / HTTP/1.0" 400 68756
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:03:45] "GET / HTTP/1.0" 400 68482
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 18:03:46] "GET /favicon.ico HTTP/1.0" 400 68416
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /stdout
+[23/Feb/2024 18:05:28] "GET /stdout HTTP/1.0" 400 68548
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 18:05:28] "GET /favicon.ico HTTP/1.0" 400 68422
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:10:11] "GET / HTTP/1.0" 400 66866
+Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'app.ai-leadmagnets.com'. You may need to add 'app.ai-leadmagnets.com' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[23/Feb/2024 18:10:12] "GET /favicon.ico HTTP/1.0" 400 66987
+/home/ubuntu/Desktop/websiteAudit/websiteAudit/settings.py changed, reloading.
+Performing system checks...
+
+Table created and saved to ./media/example_report
+System check identified no issues (0 silenced).
+February 23, 2024 - 15:52:58
+Django version 4.2.9, using settings 'websiteAudit.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+
+Watching for file changes with StatReloader
+[23/Feb/2024 18:12:11] "GET /stdout HTTP/1.0" 301 0
+[23/Feb/2024 18:12:11] "GET /stdout/ HTTP/1.0" 200 39219
+Not Found: /favicon.ico
+[23/Feb/2024 18:12:12] "GET /favicon.ico HTTP/1.0" 404 3137
+[23/Feb/2024 18:18:52] "OPTIONS /api/addData/ HTTP/1.0" 200 0
+Internal Server Error: /api/addData/
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: api_websitereport
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/api/views.py", line 39, in addItem
+    serializer.save()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 658, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/ubuntu/Desktop/websiteAudit/api/models.py", line 43, in save
+    existing_entry = WebsiteReport.objects.filter(url=self.url).first()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 1057, in first
+    for obj in queryset[:1]:
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 398, in __iter__
+    self._fetch_all()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: api_websitereport
+[23/Feb/2024 18:18:53] "POST /api/addData/ HTTP/1.0" 500 199161
+[23/Feb/2024 18:19:04] "GET /stdout/ HTTP/1.0" 200 45046
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:19:58] "GET / HTTP/1.0" 400 66618
+Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 18:37:29] "POST / HTTP/1.0" 400 67251
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin/scripts/setup.php
+[23/Feb/2024 19:13:10] "GET http://13.49.168.102:8080/phpMyAdmin/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpmyadmin/scripts/setup.php
+[23/Feb/2024 19:13:11] "GET http://13.49.168.102:8080/phpmyadmin/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.4/scripts/setup.php
+[23/Feb/2024 19:13:11] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.4/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.3/scripts/setup.php
+[23/Feb/2024 19:13:11] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.3/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.10.0.2/scripts/setup.php
+[23/Feb/2024 19:13:11] "GET http://13.49.168.102:8080/phpMyAdmin-2.10.0.2/scripts/setup.php HTTP/1.0" 400 66773
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.10.3/scripts/setup.php
+[23/Feb/2024 19:13:11] "GET http://13.49.168.102:8080/phpMyAdmin-2.10.3/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.8.0.2/scripts/setup.php
+[23/Feb/2024 19:13:12] "GET http://13.49.168.102:8080/phpMyAdmin-2.8.0.2/scripts/setup.php HTTP/1.0" 400 66762
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.10.2/scripts/setup.php
+[23/Feb/2024 19:13:12] "GET http://13.49.168.102:8080/phpMyAdmin-2.10.2/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.9.2/scripts/setup.php
+[23/Feb/2024 19:13:12] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.9.2/scripts/setup.php HTTP/1.0" 400 66773
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.0/scripts/setup.php
+[23/Feb/2024 19:13:12] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.0/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.7/scripts/setup.php
+[23/Feb/2024 19:13:13] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.7/scripts/setup.php HTTP/1.0" 400 66751
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.11.1.2/scripts/setup.php
+[23/Feb/2024 19:13:13] "GET http://13.49.168.102:8080/phpMyAdmin-2.11.1.2/scripts/setup.php HTTP/1.0" 400 66773
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/pma/scripts/setup.php
+[23/Feb/2024 19:13:13] "GET http://13.49.168.102:8080/pma/scripts/setup.php HTTP/1.0" 400 66597
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin3/scripts/setup.php
+[23/Feb/2024 19:13:13] "GET http://13.49.168.102:8080/phpMyAdmin3/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/myadmin/scripts/setup.php
+[23/Feb/2024 19:13:13] "GET http://13.49.168.102:8080/myadmin/scripts/setup.php HTTP/1.0" 400 66641
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/MyAdmin/scripts/setup.php
+[23/Feb/2024 19:13:14] "GET http://13.49.168.102:8080/MyAdmin/scripts/setup.php HTTP/1.0" 400 66641
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/PHPMYADMIN/scripts/setup.php
+[23/Feb/2024 19:13:14] "GET http://13.49.168.102:8080/PHPMYADMIN/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/mysqladmin/scripts/setup.php
+[23/Feb/2024 19:13:14] "GET http://13.49.168.102:8080/mysqladmin/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/SQL/scripts/setup.php
+[23/Feb/2024 19:13:14] "GET http://13.49.168.102:8080/SQL/scripts/setup.php HTTP/1.0" 400 66597
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.5.5-pl1/scripts/setup.php
+[23/Feb/2024 19:13:15] "GET http://13.49.168.102:8080/phpMyAdmin-2.5.5-pl1/scripts/setup.php HTTP/1.0" 400 66784
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.5.5/scripts/setup.php
+[23/Feb/2024 19:13:15] "GET http://13.49.168.102:8080/phpMyAdmin-2.5.5/scripts/setup.php HTTP/1.0" 400 66740
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.5.4/scripts/setup.php
+[23/Feb/2024 19:13:15] "GET http://13.49.168.102:8080/phpMyAdmin-2.5.4/scripts/setup.php HTTP/1.0" 400 66740
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2.5.7-pl1/scripts/setup.php
+[23/Feb/2024 19:13:15] "GET http://13.49.168.102:8080/phpMyAdmin-2.5.7-pl1/scripts/setup.php HTTP/1.0" 400 66784
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/admin/pma/scripts/setup.php
+[23/Feb/2024 19:13:15] "GET http://13.49.168.102:8080/admin/pma/scripts/setup.php HTTP/1.0" 400 66663
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin-2/scripts/setup.php
+[23/Feb/2024 19:13:16] "GET http://13.49.168.102:8080/phpMyAdmin-2/scripts/setup.php HTTP/1.0" 400 66696
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/web/phpMyAdmin/scripts/setup.php
+[23/Feb/2024 19:13:16] "GET http://13.49.168.102:8080/web/phpMyAdmin/scripts/setup.php HTTP/1.0" 400 66718
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/webadmin/scripts/setup.php
+[23/Feb/2024 19:13:16] "GET http://13.49.168.102:8080/webadmin/scripts/setup.php HTTP/1.0" 400 66652
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/admin/scripts/setup.php
+[23/Feb/2024 19:13:17] "GET http://13.49.168.102:8080/admin/scripts/setup.php HTTP/1.0" 400 66619
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/dbadmin/scripts/setup.php
+[23/Feb/2024 19:13:17] "GET http://13.49.168.102:8080/dbadmin/scripts/setup.php HTTP/1.0" 400 66641
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/mysql/scripts/setup.php
+[23/Feb/2024 19:13:17] "GET http://13.49.168.102:8080/mysql/scripts/setup.php HTTP/1.0" 400 66619
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpMyAdmin2/scripts/setup.php
+[23/Feb/2024 19:13:17] "GET http://13.49.168.102:8080/phpMyAdmin2/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpma/scripts/setup.php
+[23/Feb/2024 19:13:18] "GET http://13.49.168.102:8080/phpma/scripts/setup.php HTTP/1.0" 400 66619
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/sqlweb/scripts/setup.php
+[23/Feb/2024 19:13:18] "GET http://13.49.168.102:8080/sqlweb/scripts/setup.php HTTP/1.0" 400 66630
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/webdb/scripts/setup.php
+[23/Feb/2024 19:13:18] "GET http://13.49.168.102:8080/webdb/scripts/setup.php HTTP/1.0" 400 66619
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/websql/scripts/setup.php
+[23/Feb/2024 19:13:18] "GET http://13.49.168.102:8080/websql/scripts/setup.php HTTP/1.0" 400 66630
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/_phpMyAdmin/scripts/setup.php
+[23/Feb/2024 19:13:19] "GET http://13.49.168.102:8080/_phpMyAdmin/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/php/scripts/setup.php
+[23/Feb/2024 19:13:19] "GET http://13.49.168.102:8080/php/scripts/setup.php HTTP/1.0" 400 66597
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/admin/phpmyadmin/scripts/setup.txt
+[23/Feb/2024 19:13:19] "GET http://13.49.168.102:8080/admin/phpmyadmin/scripts/setup.txt HTTP/1.0" 400 66740
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/db/scripts/setup.php
+[23/Feb/2024 19:13:19] "GET http://13.49.168.102:8080/db/scripts/setup.php HTTP/1.0" 400 66586
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/sqlmanager/scripts/setup.php
+[23/Feb/2024 19:13:19] "GET http://13.49.168.102:8080/sqlmanager/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/mysqlmanager/scripts/setup.php
+[23/Feb/2024 19:13:20] "GET http://13.49.168.102:8080/mysqlmanager/scripts/setup.php HTTP/1.0" 400 66696
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpmanager/scripts/setup.php
+[23/Feb/2024 19:13:20] "GET http://13.49.168.102:8080/phpmanager/scripts/setup.php HTTP/1.0" 400 66674
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/php-myadmin/scripts/setup.php
+[23/Feb/2024 19:13:20] "GET http://13.49.168.102:8080/php-myadmin/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/phpmy-admin/scripts/setup.php
+[23/Feb/2024 19:13:20] "GET http://13.49.168.102:8080/phpmy-admin/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'ip-172-31-42-36.eu-north-1.compute.internal:8080'. You may need to add 'ip-172-31-42-36.eu-north-1.compute.internal' to ALLOWED_HOSTS.
+Bad Request: /http:/13.49.168.102:8080/mysql-admin/scripts/setup.php
+[23/Feb/2024 19:13:21] "GET http://13.49.168.102:8080/mysql-admin/scripts/setup.php HTTP/1.0" 400 66685
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:45] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:45] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:45] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:45] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:45] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:46] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:46] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:46] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:46] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '49.13.151.148:225'. You may need to add '49.13.151.148' to ALLOWED_HOSTS.
+Bad Request: /49.13.151.148:225
+[23/Feb/2024 19:27:47] "CONNECT 49.13.151.148:225 HTTP/1.1" 400 65993
+Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 19:39:22] "GET / HTTP/1.0" 400 66721
+[23/Feb/2024 19:39:57] code 400, message Bad request version ('À\x14À')
+[23/Feb/2024 19:39:57] You're accessing the development server over HTTPS, but it only supports HTTP.
+[23/Feb/2024 19:42:22] code 400, message Bad request version ('À\x13À')
+[23/Feb/2024 19:42:22] You're accessing the development server over HTTPS, but it only supports HTTP.
+[23/Feb/2024 19:42:23] code 400, message Bad request version ('À(À$À\x14À')
+[23/Feb/2024 19:42:23] You're accessing the development server over HTTPS, but it only supports HTTP.
+Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 19:59:14] "GET / HTTP/1.0" 400 66721
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 20:06:38] "GET / HTTP/1.1" 400 66180
+Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 20:42:20] "GET / HTTP/1.0" 400 66721
+Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102:8080'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /
+[23/Feb/2024 20:51:17] "GET / HTTP/1.1" 400 66562
+[23/Feb/2024 21:09:35] "GET /api/getData HTTP/1.0" 301 0
+Internal Server Error: /api/getData/
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.OperationalError: no such table: api_websitereport
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/Desktop/websiteAudit/api/views.py", line 25, in getData
+    logger.info(f"Successfully fetched {len(items)} items from the database.")
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 380, in __len__
+    self._fetch_all()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 1881, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.OperationalError: no such table: api_websitereport
+[23/Feb/2024 21:09:36] "GET /api/getData/ HTTP/1.0" 500 162162
+Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/ubuntu/Desktop/websiteAudit/env/lib/python3.9/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '13.49.168.102'. You may need to add '13.49.168.102' to ALLOWED_HOSTS.
+Bad Request: /.env
+[23/Feb/2024 21:14:13] "GET /.env HTTP/1.0" 400 66970
+Not Found: /
+[23/Feb/2024 21:15:59] "GET / HTTP/1.0" 404 3086
