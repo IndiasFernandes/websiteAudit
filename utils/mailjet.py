@@ -2,6 +2,25 @@ from dotenv import load_dotenv
 from mailjet_rest import Client
 import os
 
+def truncate_to_1000_bytes(text, encoding='utf-8'):
+    encoded_text = text.encode(encoding)
+    if len(encoded_text) <= 1000:
+        return encoded_text
+    # Truncate and decode to avoid breaking characters
+    truncated_text = encoded_text[:1000]
+    # Try to decode back to string to check for partial characters
+    # Adjust as necessary to ensure the decoded string is valid
+    while True:
+        try:
+            # Attempt to decode truncated text back to a string
+            truncated_text.decode(encoding)
+            break  # Success, no partial character at the end
+        except UnicodeDecodeError:
+            # Failed, likely due to a partial character, remove the last byte
+            truncated_text = truncated_text[:-1]
+    return truncated_text
+
+
 def create_and_update_contact(response_data):
     load_dotenv()
 
@@ -39,6 +58,8 @@ def create_and_update_contact(response_data):
     else:
         print("List 'LM-website-CRO-audit' not found.")
 
+
+
     # Update contact with custom properties
     properties_data = {
         'Data': [
@@ -47,11 +68,11 @@ def create_and_update_contact(response_data):
             {'Name': 'lastname', 'Value': response_data.get('Last Name', '')},
             {'Name': 'url', 'Value': response_data.get('Url', '')},
             {'Name': 'overallgrade', 'Value': response_data.get('overall_grade', '')},
-            {'Name': 'ctabuttonplacement', 'Value': response_data.get('cta_button_placement', '')},
-            {'Name': 'ctaclarity', 'Value': response_data.get('cta_clarity', '')},
-            {'Name': 'headlinefocus', 'Value': response_data.get('headline_focus', '')},
-            {'Name': 'messagingclarity', 'Value': response_data.get('messaging_clarity', '')},
-            {'Name': 'formdiagnostics', 'Value': response_data.get('form_diagnostics', '')},
+            {'Name': 'ctabuttonplacement', 'Value': truncate_to_1000_bytes(response_data.get('cta_button_placement', ''))},
+            {'Name': 'ctaclarity', 'Value': truncate_to_1000_bytes(response_data.get('cta_clarity', ''))},
+            {'Name': 'headlinefocus', 'Value': truncate_to_1000_bytes(response_data.get('headline_focus', ''))},
+            {'Name': 'messagingclarity', 'Value': truncate_to_1000_bytes(response_data.get('messaging_clarity', ''))},
+            {'Name': 'formdiagnostics', 'Value': truncate_to_1000_bytes(response_data.get('form_diagnostics', ''))},
             # Include additional properties as needed
             # {'Name': 'property_name', 'Value': response_data.get('field_name', '')},
         ]
