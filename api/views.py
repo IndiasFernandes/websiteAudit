@@ -1,9 +1,7 @@
 from django.shortcuts import render, redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from utils import web_scrapper
 from utils.mailjet import create_and_update_contact
-from .forms import ContactForm
 from .models import WebsiteReport
 from .bot_analysis import analyze_website
 from .serializers import ItemSerializer
@@ -11,8 +9,8 @@ from rest_framework import status
 import logging
 from django.http import HttpResponse
 from utils import take_screenshot
-
 from utils.web_scrapper import fetch_website_html
+from pdf_generated.generate_pdf import create_pdf
 
 logger = logging.getLogger(__name__)
 
@@ -77,6 +75,17 @@ def add_report(request):
         logger.info(f"Website analysis completed. Results: {analysis_results}")
         print(f"Website analysis completed. Results: {analysis_results}")
 
+        print('')
+        body_data = [
+            {'title': 'CTA Button Placement', 'body': analysis_results['cta_button_placement']},
+            {'title': 'CTA Clarity', 'body': analysis_results['cta_clarity']},
+            {'title': 'Headline Focus', 'body': analysis_results['headline_focus']},
+            {'title': 'Messaging Clarity', 'body': analysis_results['messaging_clarity']},
+            {'title': 'Form Diagnostic', 'body': analysis_results['form_diagnostics']},
+        ]
+
+
+        create_pdf(body_data)
         # Constructing response data
         response_data = {
             'image_url': new_url,  # Assuming new_url is defined elsewhere
