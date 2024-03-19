@@ -21,6 +21,8 @@ class WebsiteReport(models.Model):
 
     screenshot = models.ImageField(upload_to='', blank=True, null=True)
 
+    pdf = models.FileField(blank=True, null=True)
+
     # Overall Rating
     overall_grade = models.FloatField(blank=True, null=True)
 

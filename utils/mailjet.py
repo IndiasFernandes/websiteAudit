@@ -55,6 +55,7 @@ def create_and_update_contact(response_data):
             {'Name': 'headlinefocus', 'Value': response_data.get('headline_focus', '')[:950]},
             {'Name': 'messagingclarity', 'Value': response_data.get('messaging_clarity', '')[:950]},
             {'Name': 'formdiagnostics', 'Value': response_data.get('form_diagnostics', '')[:950]},
+            {'Name': 'report_url', 'Value': response_data.get('report_url', '')},
             # Include additional properties as needed
             # {'Name': 'property_name', 'Value': response_data.get('field_name', '')},
         ]

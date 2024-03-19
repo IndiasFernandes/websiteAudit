@@ -1,6 +1,11 @@
+import os
+from urllib.parse import urljoin
+
 from django.shortcuts import render, redirect
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+
+from utils.generate_pdf.generate_pdf import generate_pdf
 from utils.mailjet import create_and_update_contact
 from .models import WebsiteReport
 from .bot_analysis import analyze_website
@@ -10,7 +15,6 @@ import logging
 from django.http import HttpResponse
 from utils import take_screenshot
 from utils.web_scrapper import fetch_website_html
-from pdf_generated.generate_pdf import create_pdf
 
 logger = logging.getLogger(__name__)
 
@@ -81,12 +85,20 @@ def add_report(request):
             {'title': 'CTA Clarity', 'body': analysis_results['cta_clarity']},
             {'title': 'Headline Focus', 'body': analysis_results['headline_focus']},
             {'title': 'Messaging Clarity', 'body': analysis_results['messaging_clarity']},
-            {'title': 'Form Diagnostic', 'body': analysis_results['form_diagnostics']},
         ]
 
+        url = saved_item.url
+        company_name = saved_item.name_company
+        first_name = saved_item.first_name
+        last_name = saved_item.last_name
+        e_mail = saved_item.email
+        overall_grade = analysis_results['overall_grade']
+        image_path = new_url
 
-        create_pdf(body_data)
-        # Constructing response data
+
+        # Generate PDF
+        saved_item.pdf = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)
+
         response_data = {
             'image_url': new_url,  # Assuming new_url is defined elsewhere
             'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),
@@ -97,6 +109,8 @@ def add_report(request):
             'E-mail': saved_item.email,
 
             'Company Name': saved_item.name_company,
+
+            'report_url' : urljoin(request.build_absolute_uri(), saved_item.pdf.url),
 
             'overall_grade': analysis_results['overall_grade'],
 
@@ -115,8 +129,8 @@ def add_report(request):
 
         # Send the response data to Mailjet
         create_and_update_contact(response_data)
-        logger.info(f"Response data sent to Mailjet: {response_data}")
-        print(f"Response data sent to Mailjet: {response_data}")
+        # logger.info(f"Response data sent to Mailjet: {response_data}")
+        # print(f"Response data sent to Mailjet: {response_data}")
 
 
         logger.info(f"Constructed response data successfully: {response_data}")
