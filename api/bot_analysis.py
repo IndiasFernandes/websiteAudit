@@ -52,7 +52,13 @@ def analyze_website(html_content):
 
         analysis_results[key] = result.content  # Or parse as needed
 
-    return analysis_results
+    results = client.invoke(f"Create a Python dictionary with summarized content from the following dictionary: {analysis_results}. Return only the python dictionary, ready to be used without any extra text. The dictionary should contain keys for 'overall_grade', 'cta_button_placement', 'cta_clarity', 'headline_focus', 'messaging_clarity' and 'form_diagnostics'. Each key will have a value consisting of 2 to 3 sentences summarizing the detailed content provided previously.")
+
+    print(results.content)
+    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
+
+    print(type(analysis_results_summary))
+    return analysis_results, analysis_results_summary
 
 
 def analyze_websitee(html_content):

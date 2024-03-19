@@ -3,7 +3,7 @@ from mailjet_rest import Client
 import os
 
 
-def create_and_update_contact(response_data):
+def create_and_update_contact(response_data, analysis_results_summary):
     load_dotenv()
 
     MAILJET_API = os.getenv("MAILJET_API")
@@ -49,12 +49,12 @@ def create_and_update_contact(response_data):
             {'Name': 'firstname', 'Value': response_data.get('First Name', '')},
             {'Name': 'lastname', 'Value': response_data.get('Last Name', '')},
             {'Name': 'url', 'Value': response_data.get('Url', '')},
-            {'Name': 'overallgrade', 'Value': response_data.get('overall_grade', '')},
-            {'Name': 'ctabuttonplacement', 'Value': response_data.get('cta_button_placement', '')[:950]},
-            {'Name': 'ctaclarity', 'Value': response_data.get('cta_clarity', '')[:950]},
-            {'Name': 'headlinefocus', 'Value': response_data.get('headline_focus', '')[:950]},
-            {'Name': 'messagingclarity', 'Value': response_data.get('messaging_clarity', '')[:950]},
-            {'Name': 'formdiagnostics', 'Value': response_data.get('form_diagnostics', '')[:950]},
+            {'Name': 'overallgrade', 'Value': int(analysis_results_summary['overall_grade'])},
+            {'Name': 'ctabuttonplacement', 'Value': analysis_results_summary['cta_button_placement']},
+            {'Name': 'ctaclarity', 'Value': analysis_results_summary['cta_clarity']},
+            {'Name': 'headlinefocus', 'Value': analysis_results_summary['headline_focus']},
+            {'Name': 'messagingclarity', 'Value': analysis_results_summary['messaging_clarity']},
+            {'Name': 'formdiagnostics', 'Value': analysis_results_summary['form_diagnostics']},
             {'Name': 'report_url', 'Value': response_data.get('report_url', '')},
             # Include additional properties as needed
             # {'Name': 'property_name', 'Value': response_data.get('field_name', '')},

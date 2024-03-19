@@ -75,7 +75,7 @@ def add_report(request):
         logger.info("Analyzing website HTML content.")
         print("Analyzing website HTML content.")
         analysis_results = {}
-        analysis_results = analyze_website(html_content)
+        analysis_results, analysis_results_summary = analyze_website(html_content)
         logger.info(f"Website analysis completed. Results: {analysis_results}")
         print(f"Website analysis completed. Results: {analysis_results}")
 
@@ -128,7 +128,7 @@ def add_report(request):
         }
 
         # Send the response data to Mailjet
-        create_and_update_contact(response_data)
+        create_and_update_contact(response_data, analysis_results_summary)
         # logger.info(f"Response data sent to Mailjet: {response_data}")
         # print(f"Response data sent to Mailjet: {response_data}")
 
