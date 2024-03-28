@@ -97,6 +97,8 @@ def add_report(request):
         # Generate PDF
         saved_item.pdf = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)
 
+        print(saved_item)
+
         response_data = {
             'image_url': new_url,  # Assuming new_url is defined elsewhere
             'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),

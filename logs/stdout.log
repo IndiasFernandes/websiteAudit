@@ -2893,3 +2893,143 @@ Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
 Analyzing website HTML content.
 Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
 Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 09:56:50', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328095707.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 104, in add_report
+    'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),
+AttributeError: 'str' object has no attribute 'date'
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 104, in add_report
+    'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),
+AttributeError: 'str' object has no attribute 'date'
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 104, in add_report
+    'Date': saved_item.date.strftime('%Y-%m-%d %H:%M:%S'),
+AttributeError: 'str' object has no attribute 'date'
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 113, in add_report
+    'report_url' : urljoin(request.build_absolute_uri(), saved_item.pdf),
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/parse.py", line 544, in urljoin
+    base, url, _coerce_result = _coerce_args(base, url)
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/parse.py", line 133, in _coerce_args
+    raise TypeError("Cannot mix str and non-str arguments")
+TypeError: Cannot mix str and non-str arguments
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 10:27:39', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328102740.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
