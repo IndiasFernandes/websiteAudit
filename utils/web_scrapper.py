@@ -10,14 +10,20 @@ def clean_text_and_prepare_html(soup):
 
     for tag in soup.find_all(relevant_tags):
         parent_div = tag.find_parent('div')
-        div_reference = parent_div.get('id') or ' '.join(parent_div.get('class', []))
-        div_reference_str = f" <small>(in div: {div_reference})</small>" if div_reference else ""
+        # Check if a parent <div> was found
+        if parent_div:
+            div_reference = parent_div.get('id') or ' '.join(parent_div.get('class', []))
+            div_reference_str = f" <small>(in div: {div_reference})</small>" if div_reference else ""
+        else:
+            # Handle case where no parent <div> is found
+            div_reference_str = " <small>(no parent div)</small>"
         tag_text = tag.get_text(separator=" ", strip=True)
         if tag_text:
             html_content.append(f"<div><{tag.name}>{tag_text}{div_reference_str}</{tag.name}></div>")
 
     html_content.append('</body></html>')
     return ''.join(html_content)
+
 
 def fetch_website_html(url):
     """
