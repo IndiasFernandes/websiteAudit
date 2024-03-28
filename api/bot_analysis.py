@@ -58,23 +58,23 @@ def analyze_website(html_content):
     analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
 
     # create dummy data for analysis_results_summary and analysis_results
-    analysis_results = {
-        'overall_grade': 8,
-        'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
-        'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
-        'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
-        'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
-        'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
-    }
-
-    analysis_results_summary = {
-        'overall_grade': 'The landing page received a grade of 8 for conversion optimization. The CTA buttons are well-placed and clear, with concise messaging. The headlines effectively communicate the page\'s purpose, and the messaging is focused and cohesive. The form is user-friendly and enhances the overall conversion experience.',
-        'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
-        'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
-        'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
-        'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
-        'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
-    }
+    # analysis_results = {
+    #     'overall_grade': 8,
+    #     'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
+    #     'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
+    #     'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
+    #     'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
+    #     'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
+    # }
+    #
+    # analysis_results_summary = {
+    #     'overall_grade': 8,
+    #     'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
+    #     'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
+    #     'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
+    #     'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
+    #     'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
+    # }
 
     print(type(analysis_results_summary))
     return analysis_results, analysis_results_summary
