@@ -138,13 +138,21 @@ class WebsiteAudit(object):
         self.body(data['body_data'])
         self.footer()
 
-    def get_image(self, filename, width):
+    def get_image(self, filename, max_width, max_height=None):
         path = filename
         print(path)
         img = utils.ImageReader(path)
         iw, ih = img.getSize()
         aspect = ih / float(iw)
-        return Image(path, width=width, height=(width * aspect), hAlign='RIGHT')
+        new_width = max_width
+        new_height = max_width * aspect
+
+        # Adjust the height if it exceeds max_height
+        if max_height and new_height > max_height:
+            new_height = max_height
+            new_width = max_height / aspect
+
+        return Image(path, width=new_width, height=new_height, hAlign='RIGHT')
 
     def header(self, data):
         self.story.append(self.get_image(data['image_path'], cm(7)))
