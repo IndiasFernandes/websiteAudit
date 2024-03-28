@@ -28,36 +28,53 @@ def analyze_website(html_content):
     Uses OpenAI's API to analyze the HTML content of a website's landing page for conversion optimization.
     Each prompt is processed individually and the results are aggregated into a dictionary.
     """
-    prompts = generate_analysis_prompt(html_content)
-    analysis_results = {}
+    # prompts = generate_analysis_prompt(html_content)
+    # analysis_results = {}
+    #
+    # for i, prompt in enumerate(prompts, start=1):
+    #     # Assuming `client.invoke` can process a string directly. If not, adjust accordingly.
+    #     result = client.invoke(prompt)
+    #     # Assuming result.content is the response string that needs to be parsed into a dictionary value.
+    #     # You might need to adjust this part based on how your OpenAI client returns the result.
+    #     if i == 1:
+    #         key = 'overall_grade'
+    #     elif i == 2:
+    #         key = 'cta_button_placement'
+    #     elif i == 3:
+    #         key = 'cta_clarity'
+    #     elif i == 4:
+    #         key = 'headline_focus'
+    #     elif i == 5:
+    #         key = 'messaging_clarity'
+    #     elif i == 6:
+    #         key = 'form_diagnostics'
+    #
+    #
+    #     analysis_results[key] = result.content  # Or parse as needed
+    #
+    # results = client.invoke(f"Create a Python dictionary with summarized content from the following dictionary: {analysis_results}. Return only the python dictionary, ready to be used without any extra text. The dictionary should contain keys for 'overall_grade', 'cta_button_placement', 'cta_clarity', 'headline_focus', 'messaging_clarity' and 'form_diagnostics'. Each key will have a value consisting of 2 to 3 sentences summarizing the detailed content provided previously, without including any ' symbol in the answer, avoiding any errors in python code. tThe 'overall_grade' variable has to be an integer only, no text")
 
-    for i, prompt in enumerate(prompts, start=1):
-        # Assuming `client.invoke` can process a string directly. If not, adjust accordingly.
-        result = client.invoke(prompt)
-        # Assuming result.content is the response string that needs to be parsed into a dictionary value.
-        # You might need to adjust this part based on how your OpenAI client returns the result.
-        if i == 1:
-            key = 'overall_grade'
-        elif i == 2:
-            key = 'cta_button_placement'
-        elif i == 3:
-            key = 'cta_clarity'
-        elif i == 4:
-            key = 'headline_focus'
-        elif i == 5:
-            key = 'messaging_clarity'
-        elif i == 6:
-            key = 'form_diagnostics'
+    # print(results.content)
+    # analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
 
+    # create dummy data for analysis_results_summary and analysis_results
+    analysis_results = {
+        'overall_grade': 8,
+        'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
+        'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
+        'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
+        'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
+        'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
+    }
 
-        analysis_results[key] = result.content  # Or parse as needed
-
-    results = client.invoke(f"Create a Python dictionary with summarized content from the following dictionary: {analysis_results}. Return only the python dictionary, ready to be used without any extra text. The dictionary should contain keys for 'overall_grade', 'cta_button_placement', 'cta_clarity', 'headline_focus', 'messaging_clarity' and 'form_diagnostics'. Each key will have a value consisting of 2 to 3 sentences summarizing the detailed content provided previously, without including any ' symbol in the answer, avoiding any errors in python code. tThe 'overall_grade' variable has to be an integer only, no text")
-
-    print(results.content)
-    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
-
-
+    analysis_results_summary = {
+        'overall_grade': 'The landing page received a grade of 8 for conversion optimization. The CTA buttons are well-placed and clear, with concise messaging. The headlines effectively communicate the page\'s purpose, and the messaging is focused and cohesive. The form is user-friendly and enhances the overall conversion experience.',
+        'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.',
+        'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.',
+        'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.',
+        'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.',
+        'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'
+    }
 
     print(type(analysis_results_summary))
     return analysis_results, analysis_results_summary

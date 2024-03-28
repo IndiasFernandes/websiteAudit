@@ -3046,3 +3046,5 @@ Taking mobile screenshot of http://www.noticetheelephant.com
 Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
 /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/take_screenshot.py changed, reloading.
 Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py changed, reloading.
+Watching for file changes with StatReloader
