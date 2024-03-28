@@ -30,7 +30,6 @@ def get_reports(request):
     print(f"Successfully fetched {len(items)} items from the database.")
     return Response(serializer.data)
 
-
 @api_view(['POST'])
 def add_report(request):
 
@@ -60,7 +59,6 @@ def add_report(request):
                 new_url = request.build_absolute_uri(saved_item.screenshot.url)
         else:
             new_url = None
-
         logger.debug(f"Constructed new image URL: {new_url}")
         print(f"Constructed new image URL: {new_url}")
 
@@ -122,10 +120,10 @@ def add_report(request):
 
             'Social Proof': None,
             'Company Info Presence': None,
-
             # Add any other fields you want to include
             'other_field': 'other_value',
         }
+
 
         # Send the response data to Mailjet
         create_and_update_contact(response_data, analysis_results_summary)
@@ -148,7 +146,6 @@ def home(request):
     logger.info("Rendering form template.")
     print("Rendering form template.")
     return render(request, 'home.html')
-
 
 
 def screenshot_view(request):

@@ -40,7 +40,7 @@ def take_screenshot(url):
 
     # Configuration for mobile emulation to mimic an iPhone X
     mobile_emulation = {
-        "deviceMetrics": {"width": 375, "height": 812, "pixelRatio": 3.0},
+        "deviceMetrics": {"width": 375, "height": 712, "pixelRatio": 3.0},
         "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
     }
 
@@ -64,11 +64,13 @@ def take_screenshot(url):
 
         driver.get_screenshot_as_file(filepath)  # Save the screenshot
         logger.info(f'Saving mobile screenshot as {filepath}')
+        print(f'Saving mobile screenshot as {filepath}')
 
         # Return the relative path to the screenshot
         return os.path.join(settings.MEDIA_URL, filename)
     except Exception as e:
         logger.error(f'Failed to capture mobile screenshot for {url}. Error: {e}')
+        print(f'Failed to capture mobile screenshot for {url}. Error: {e}')
         return None
     finally:
         driver.quit()  # Clean up by closing the browser

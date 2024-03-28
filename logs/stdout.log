@@ -1526,3 +1526,1370 @@ Constructed response data successfully: {'image_url': 'http://localhost:8080/med
 /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed. Results: {'overall_grade': '8', 'cta_button_placement': 'The landing page in HTML has a call-to-action button in the header, making it easily accessible for visitors. However, the main call-to-action is not placed above the fold, which may lead to decreased conversions. The landing page does repeat the call to action throughout the page, helping to reinforce the desired action. There are no secondary call-to-action buttons present.\n\nTo improve conversion rates, it is recommended to place the main call-to-action button above the fold, ensuring it is one of the first things visitors see. Additionally, consider adding secondary call-to-action buttons strategically throughout the page to provide multiple opportunities for visitors to convert. This will help to capture the attention of visitors who may not have been ready to convert initially.', 'cta_clarity': 'The landing page has clear call-to-action buttons that are instructive and easy to understand. The buttons use simple language like "Sign Up" and "Learn More," making it easy for users to know what action to take. The call-to-actions can be interpreted in only one way, which is beneficial for clarity. \n\nTo further improve the clarity of the call-to-action buttons, I recommend using contrasting colors to make them stand out more on the page. Additionally, consider adding descriptive text near the buttons to provide more context and encourage users to click. Finally, A/B testing different variations of the buttons can help determine which ones are most effective in driving conversions.', 'headline_focus': 'The landing page has a clear and concise headline that effectively communicates the purpose of the page. It clearly states "Sign up now for exclusive access to our latest products and promotions." This headline is straightforward and immediately lets visitors know what they can expect by signing up.\n\nTo further improve the effectiveness of the headlines, it would be beneficial to focus on highlighting the benefits of signing up, such as "Get exclusive early access to new products" or "Stay updated on our latest promotions and deals." By emphasizing the value that visitors will receive by signing up, the headlines can better capture their attention and encourage them to take action.', 'messaging_clarity': 'The landing page in HTML is well-focused with a clear goal of promoting a new software product. The messaging is straightforward and guides the user to sign up for a free trial in a simple and clear way. The offer is presented effectively with appealing messaging, clear benefits, and transparent terms. The page conveys a cohesive message without any contradictory or opposing messages. There are signals of trust such as customer testimonials and client logos displayed prominently.\n\nThe readability of the text is good, with concise and easy to understand language used throughout the page. However, there is room for improvement in terms of font size and spacing to enhance readability further. \n\nTo improve the clarity of the messaging, I recommend simplifying the language even further to make it more accessible to a wider audience. Additionally, including more visuals such as infographics or videos could help reinforce key messages and make the page more engaging. Lastly, adding more trust signals such as certifications or awards could further enhance credibility and encourage users to take action.', 'form_diagnostics': 'The landing page has a form placed prominently at the top, making it easily accessible. The form is short and concise, with only essential fields required. It does not use a progress bar for multi-step forms, which could improve clarity on the length of the form. Additionally, the landing page provides alternative ways of contact at the bottom for those who may not wish to fill out the form.\n\nOverall, the landing page is doing well in terms of clarity of forms, but could benefit from adding a progress bar for multi-step forms to improve user experience. I would recommend testing different form lengths and layouts to see which converts the best, as well as implementing A/B testing to optimize form fields for higher conversions. Additionally, considering adding trust symbols or testimonials near the form to increase credibility and trust with visitors.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-23 09:27:24', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john45r43@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240323092751.pdf', 'overall_grade': '8', 'cta_button_placement': 'The landing page in HTML has a call-to-action button in the header, making it easily accessible for visitors. However, the main call-to-action is not placed above the fold, which may lead to decreased conversions. The landing page does repeat the call to action throughout the page, helping to reinforce the desired action. There are no secondary call-to-action buttons present.\n\nTo improve conversion rates, it is recommended to place the main call-to-action button above the fold, ensuring it is one of the first things visitors see. Additionally, consider adding secondary call-to-action buttons strategically throughout the page to provide multiple opportunities for visitors to convert. This will help to capture the attention of visitors who may not have been ready to convert initially.', 'cta_clarity': 'The landing page has clear call-to-action buttons that are instructive and easy to understand. The buttons use simple language like "Sign Up" and "Learn More," making it easy for users to know what action to take. The call-to-actions can be interpreted in only one way, which is beneficial for clarity. \n\nTo further improve the clarity of the call-to-action buttons, I recommend using contrasting colors to make them stand out more on the page. Additionally, consider adding descriptive text near the buttons to provide more context and encourage users to click. Finally, A/B testing different variations of the buttons can help determine which ones are most effective in driving conversions.', 'headline_focus': 'The landing page has a clear and concise headline that effectively communicates the purpose of the page. It clearly states "Sign up now for exclusive access to our latest products and promotions." This headline is straightforward and immediately lets visitors know what they can expect by signing up.\n\nTo further improve the effectiveness of the headlines, it would be beneficial to focus on highlighting the benefits of signing up, such as "Get exclusive early access to new products" or "Stay updated on our latest promotions and deals." By emphasizing the value that visitors will receive by signing up, the headlines can better capture their attention and encourage them to take action.', 'messaging_clarity': 'The landing page in HTML is well-focused with a clear goal of promoting a new software product. The messaging is straightforward and guides the user to sign up for a free trial in a simple and clear way. The offer is presented effectively with appealing messaging, clear benefits, and transparent terms. The page conveys a cohesive message without any contradictory or opposing messages. There are signals of trust such as customer testimonials and client logos displayed prominently.\n\nThe readability of the text is good, with concise and easy to understand language used throughout the page. However, there is room for improvement in terms of font size and spacing to enhance readability further. \n\nTo improve the clarity of the messaging, I recommend simplifying the language even further to make it more accessible to a wider audience. Additionally, including more visuals such as infographics or videos could help reinforce key messages and make the page more engaging. Lastly, adding more trust signals such as certifications or awards could further enhance credibility and encourage users to take action.', 'form_diagnostics': 'The landing page has a form placed prominently at the top, making it easily accessible. The form is short and concise, with only essential fields required. It does not use a progress bar for multi-step forms, which could improve clarity on the length of the form. Additionally, the landing page provides alternative ways of contact at the bottom for those who may not wish to fill out the form.\n\nOverall, the landing page is doing well in terms of clarity of forms, but could benefit from adding a progress bar for multi-step forms to improve user experience. I would recommend testing different form lengths and layouts to see which converts the best, as well as implementing A/B testing to optimize form fields for higher conversions. Additionally, considering adding trust symbols or testimonials near the form to increase credibility and trust with visitors.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 78, in add_report
+    analysis_results, analysis_results_summary = analyze_website(html_content)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py", line 58, in analyze_website
+    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 4
+    'cta_clarity': 'The landing page's CTAs are clear and instructive, but can be improved by using contrasting colors, providing brief explanations, and conducting A/B testing. Enhancing clarity can optimize conversion rates.',
+                                     ^
+SyntaxError: invalid syntax
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed. Results: {'overall_grade': '7', 'cta_button_placement': "The landing page has a CTA button in the header, making it easily accessible for visitors. However, the main call to action is not placed above the fold, which may result in some visitors not scrolling down to find it. The landing page does repeat the call to action throughout the page, which is good for reinforcing the desired action. There are no secondary call to actions present.\n\nTo improve conversion rates, I recommend placing the main call to action above the fold to ensure it is the first thing visitors see. Additionally, consider using contrasting colors or bold fonts to make the CTA button stand out more. Include a secondary call to action for visitors who may not be ready to convert immediately. Overall, optimizing the placement and design of CTA buttons can greatly impact the landing page's effectiveness.", 'cta_clarity': 'The landing page\'s call to actions are clear and instructive. They are easily interpreted in one way and use simple language that the user can understand. The buttons are labeled clearly and use action-oriented words like "Sign Up" and "Get Started". However, there is room for improvement in terms of making the call to actions more visually prominent and utilizing contrasting colors to make them stand out. Adding a sense of urgency or highlighting the benefits of taking action can also enhance the effectiveness of the call to actions. Overall, the landing page is doing well in terms of clarity of call to actions but can benefit from some adjustments to further improve conversion rates.', 'headline_focus': 'The landing page has clear and concise headlines that effectively communicate the purpose of the page. The headlines are easy to understand and directly address the benefits of the product or service being offered. \n\nTo further improve the focus of the headlines, it is recommended to make them more action-oriented and include strong calls to action. Additionally, incorporating specific keywords related to the product or service can help improve search engine optimization and attract more targeted traffic to the landing page. It is also important to test different headline variations to see which ones resonate best with the target audience and drive the highest conversions.', 'messaging_clarity': 'The landing page in HTML is well focused on promoting a software product for email marketing. The messaging is clear and concise, with a primary goal of encouraging visitors to sign up for a free trial. The offer is prominently displayed at the top of the page, with appealing messaging highlighting the benefits of the software. The terms of the free trial are transparent, with no hidden fees or obligations.\n\nThe messaging of the page is cohesive, with no contradictory messages present. There are signals of trust in the form of customer testimonials and a client list displayed towards the bottom of the page. These help to build credibility and trust with visitors.\n\nThe readability of the text is good, with clear headings, bullet points, and white space to break up the content. The font size and color choices make the text easy to read, and the overall design of the page is clean and professional.\n\nTo further improve the clarity of the messaging, I would recommend simplifying the navigation menu to focus solely on the free trial offer and key features of the software. Additionally, adding more visuals such as videos or infographics to highlight the benefits of the software could help engage visitors and drive conversions. Finally, incorporating a live chat feature for immediate customer support could help address any questions or concerns visitors may have.', 'form_diagnostics': 'The landing page has a form located prominently at the top, making it easily accessible for visitors. The form is short and straightforward, asking for only essential information. There are no alternative ways of contact provided for those who fail to fill the form, which could be a missed opportunity for capturing leads. The form is not divided into steps or accompanied by a progress bar, which could improve the user experience and encourage completion. \n\nRecommendations:\n1. Add alternative contact options such as a phone number or email address for visitors who prefer not to fill out the form.\n2. Consider dividing the form into steps and implementing a progress bar to signal the length of the form and keep users engaged.\n3. Test different form layouts, lengths, and placements to optimize conversion rates.'}
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 132, in add_report
+    create_and_update_contact(response_data, analysis_results_summary)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/mailjet.py", line 52, in create_and_update_contact
+    {'Name': 'overallgrade', 'Value': int(analysis_results_summary['overall_grade'])},
+ValueError: invalid literal for int() with base 10: 'The landing page received a grade of 7. Recommendations include placing the main call to action above the fold and using contrasting colors or bold fonts for the CTA button.'
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed. Results: {'overall_grade': '7', 'cta_button_placement': 'The landing page has a call-to-action button in the header, making it easily accessible for visitors. The main call to action is also placed above the fold, increasing visibility and encouraging immediate action. Throughout the page, the call to action is repeated, reinforcing the desired action for visitors. There are no secondary call to actions, keeping the focus on the main goal.\n\nRecommendations:\n1. Consider adding more visual cues to draw attention to the call-to-action buttons, such as contrasting colors or animations.\n2. Test different placements for the call-to-action buttons, such as at the end of sections or in a sticky footer, to see which location generates the highest conversion rates.\n3. Utilize persuasive language in the call-to-action buttons to clearly communicate the benefits of taking action.\n4. A/B test different variations of the call-to-action buttons to optimize for the highest conversion rates.', 'cta_clarity': 'The landing page is clear in terms of call to actions. The buttons are instructive and can be interpreted in only one way, making it easy for users to understand. The language used in the call to actions is simple and straightforward, ensuring that users know exactly what action to take. To further improve clarity, I recommend using contrasting colors for the call-to-action buttons to make them stand out more. Additionally, consider adding brief explanations next to the buttons to provide additional context for users. This will help guide them through the conversion process more effectively.', 'headline_focus': 'The landing page has clear headlines that effectively communicate the purpose of the page. The headlines are concise and easily understandable, making it clear to visitors what the page is about. This clarity helps to reduce confusion and ensures that visitors know what action to take. However, the headlines could be more engaging to capture the attention of visitors and encourage them to explore further. I recommend focusing the headlines on the benefits or unique selling points of the product or service to make them more compelling and persuasive. This can help improve conversion rates and drive more visitors to take the desired action.', 'messaging_clarity': "The landing page is well focused with a clear goal of promoting a new fitness app. The messaging is appealing, highlighting the benefits of the app such as personalized workout plans and progress tracking. The terms are transparent, with a free trial offer prominently displayed.\n\nThe page's message is cohesive, with no contradictory messages. There are customer reviews and testimonials showcased to build trust with potential users. The readability of the text is good, with clear headings and bullet points to break up the content.\n\nTo improve clarity of messaging, I would recommend simplifying the language used to make it more accessible to all users. Additionally, including more visuals such as videos or infographics could help convey the benefits of the app more effectively. Lastly, adding a call to action button at the top of the page could guide users to sign up for the free trial more easily.", 'form_diagnostics': "The landing page's form is clear and well-placed at the top for easy access. It is short and concise, only requiring essential information. There are alternative contact options provided for users who do not wish to fill out the form, such as a phone number or email address. The form is not divided into steps, but could benefit from a progress bar to indicate the length of the form and reassure users. \n\nTo further optimize the form, it could be beneficial to include additional fields for specific user preferences or needs, while keeping the overall length of the form short. Additionally, adding social proof or testimonials near the form can help build trust and encourage users to fill it out. Finally, implementing A/B testing to analyze the effectiveness of different form layouts and content can help improve conversion rates."}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-23 09:38:28', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john323456@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240323093849.pdf', 'overall_grade': '7', 'cta_button_placement': 'The landing page has a call-to-action button in the header, making it easily accessible for visitors. The main call to action is also placed above the fold, increasing visibility and encouraging immediate action. Throughout the page, the call to action is repeated, reinforcing the desired action for visitors. There are no secondary call to actions, keeping the focus on the main goal.\n\nRecommendations:\n1. Consider adding more visual cues to draw attention to the call-to-action buttons, such as contrasting colors or animations.\n2. Test different placements for the call-to-action buttons, such as at the end of sections or in a sticky footer, to see which location generates the highest conversion rates.\n3. Utilize persuasive language in the call-to-action buttons to clearly communicate the benefits of taking action.\n4. A/B test different variations of the call-to-action buttons to optimize for the highest conversion rates.', 'cta_clarity': 'The landing page is clear in terms of call to actions. The buttons are instructive and can be interpreted in only one way, making it easy for users to understand. The language used in the call to actions is simple and straightforward, ensuring that users know exactly what action to take. To further improve clarity, I recommend using contrasting colors for the call-to-action buttons to make them stand out more. Additionally, consider adding brief explanations next to the buttons to provide additional context for users. This will help guide them through the conversion process more effectively.', 'headline_focus': 'The landing page has clear headlines that effectively communicate the purpose of the page. The headlines are concise and easily understandable, making it clear to visitors what the page is about. This clarity helps to reduce confusion and ensures that visitors know what action to take. However, the headlines could be more engaging to capture the attention of visitors and encourage them to explore further. I recommend focusing the headlines on the benefits or unique selling points of the product or service to make them more compelling and persuasive. This can help improve conversion rates and drive more visitors to take the desired action.', 'messaging_clarity': "The landing page is well focused with a clear goal of promoting a new fitness app. The messaging is appealing, highlighting the benefits of the app such as personalized workout plans and progress tracking. The terms are transparent, with a free trial offer prominently displayed.\n\nThe page's message is cohesive, with no contradictory messages. There are customer reviews and testimonials showcased to build trust with potential users. The readability of the text is good, with clear headings and bullet points to break up the content.\n\nTo improve clarity of messaging, I would recommend simplifying the language used to make it more accessible to all users. Additionally, including more visuals such as videos or infographics could help convey the benefits of the app more effectively. Lastly, adding a call to action button at the top of the page could guide users to sign up for the free trial more easily.", 'form_diagnostics': "The landing page's form is clear and well-placed at the top for easy access. It is short and concise, only requiring essential information. There are alternative contact options provided for users who do not wish to fill out the form, such as a phone number or email address. The form is not divided into steps, but could benefit from a progress bar to indicate the length of the form and reassure users. \n\nTo further optimize the form, it could be beneficial to include additional fields for specific user preferences or needs, while keeping the overall length of the form short. Additionally, adding social proof or testimonials near the form can help build trust and encourage users to fill it out. Finally, implementing A/B testing to analyze the effectiveness of different form layouts and content can help improve conversion rates.", 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website HTML content.
+Website analysis completed.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 58, in add_report
+    generate_pdf_report(saved_item, analysis_results, new_url)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 106, in generate_pdf_report
+    analysis_results['overall_grade'],
+KeyError: 'overall_grade'
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website HTML content.
+Website analysis completed.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 58, in add_report
+    generate_pdf_report(saved_item, analysis_results, new_url)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 99, in generate_pdf_report
+    saved_item.pdf = generate_pdf(
+TypeError: 'module' object is not callable
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website HTML content.
+Website analysis completed.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 58, in add_report
+    generate_pdf_report(saved_item, analysis_results, new_url)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 105, in generate_pdf_report
+    saved_item.pdf = generate_pdf(
+TypeError: 'module' object is not callable
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 39, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in process_report
+    screenshot_url = take_website_screenshot(saved_item, request)  # Take a screenshot and get the new URL
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 149, in take_website_screenshot
+    screenshot_path = take_screenshot(saved_item.url)
+TypeError: 'module' object is not callable
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 49, in process_report
+    response_data = generate_response_data(saved_item, analysis_results, screenshot_url, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 80, in generate_response_data
+    'report_url': urljoin(request.build_absolute_uri(), saved_item.pdf.url),
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 66, in url
+    self._require_file()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/db/models/fields/files.py", line 41, in _require_file
+    raise ValueError(
+ValueError: The 'pdf' attribute has no file associated with it.
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 49, in process_report
+    response_data = generate_response_data(saved_item, analysis_results, screenshot_url, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 85, in generate_response_data
+    'overall_grade': analysis_results['overall_grade'],
+TypeError: tuple indices must be integers or slices, not str
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 49, in process_report
+    response_data = generate_response_data(saved_item, analysis_results, screenshot_url, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 85, in generate_response_data
+    'overall_grade': int(analysis_results['overall_grade']),
+TypeError: tuple indices must be integers or slices, not str
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 49, in process_report
+    response_data = generate_response_data(saved_item, analysis_results, screenshot_url, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 86, in generate_response_data
+    'overall_grade': int(analysis_results['overall_grade']),
+TypeError: tuple indices must be integers or slices, not str
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in process_report
+    analysis_results, analysis_results_summary = analyze_website_content(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 61, in analyze_website_content
+    analysis_results = analyze_website(html_content)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py", line 58, in analyze_website
+    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 7
+    'form_diagnostics': 'The landing page's form is placed prominently and is short and concise. To improve clarity, consider adding alternative contact options and a progress bar for lengthy forms.'
+                                          ^
+SyntaxError: invalid syntax
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 50, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 108, in generate_pdf_report
+    pdf_path = generate_pdf(response_data)  # Adjust this call according to your PDF generation logic
+TypeError: 'module' object is not callable
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in process_report
+    analysis_results, analysis_results_summary = analyze_website_content(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 61, in analyze_website_content
+    analysis_results = analyze_website(html_content)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py", line 58, in analyze_website
+    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 5
+    'headline_focus': 'The landing page's headline effectively communicates the purpose and benefits of signing up. To improve, strengthen the subheadline with specific details and action-oriented language to increase visitor motivation.',
+                                        ^
+SyntaxError: invalid syntax
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 50, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 125, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+TypeError: 'module' object is not callable
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in process_report
+    analysis_results, analysis_results_summary = analyze_website_content(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 61, in analyze_website_content
+    analysis_results = analyze_website(html_content)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py", line 58, in analyze_website
+    analysis_results_summary = ast.literal_eval(results.content)  # Or parse as needed
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 62, in literal_eval
+    node_or_string = parse(node_or_string, mode='eval')
+  File "/usr/local/Cellar/python@3.9/3.9.18_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ast.py", line 50, in parse
+    return compile(source, filename, mode, flags,
+  File "<unknown>", line 4
+    'cta_clarity': 'The landing page's CTAs are clear and instructive, but using action-oriented language and visual cues can enhance clarity. Testing different variations is also advised for optimization.',
+                                     ^
+SyntaxError: invalid syntax
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "None"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 50, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 125, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/generate_pdf.py", line 25, in generate_pdf
+    path = output.save()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py", line 58, in save
+    pdf_generator.generate_pdf(self.get_data())
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_generator.py", line 63, in generate_pdf
+    self.template.build_story(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 137, in build_story
+    self.header(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 150, in header
+    self.story.append(self.get_image(data['image_path'], cm(7)))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 144, in get_image
+    img = utils.ImageReader(path)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName=None identity=[ImageReader@0x10d93c430] Cannot open resource "None"
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/bot_analysis.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/take_screenshot.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "None"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 40, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 50, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 125, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/generate_pdf.py", line 25, in generate_pdf
+    path = output.save()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py", line 58, in save
+    pdf_generator.generate_pdf(self.get_data())
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_generator.py", line 63, in generate_pdf
+    self.template.build_story(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 137, in build_story
+    self.header(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 150, in header
+    self.story.append(self.get_image(data['image_path'], cm(7)))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 144, in get_image
+    img = utils.ImageReader(path)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName=None identity=[ImageReader@0x10f4bd4c0] Cannot open resource "None"
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.noticetheelephant.com
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media//media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/api/report/add//media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 55, in process_report
+    screenshot_url = take_website_screenshot(saved_item, request)  # Take a screenshot and get the new URL
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 196, in take_website_screenshot
+    new_url = BASE_DIR + screenshot_path
+TypeError: unsupported operand type(s) for +: 'PosixPath' and 'str'
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 47, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 55, in process_report
+    screenshot_url = take_website_screenshot(saved_item, request)  # Take a screenshot and get the new URL
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 200, in take_website_screenshot
+    logger.info(f"Screenshot taken and accessible at: {new_url}")
+NameError: name 'new_url' is not defined
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media/
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.noticetheelephant.com
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.noticetheelephant.com
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.google.com
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/google.com.png
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.google.pt
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/google.pt.png
+Watching for file changes with StatReloader
+Taking mobile screenshot of http://www.google.pl
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/google.pl.png
+Watching for file changes with StatReloader
+Not Found: /favicon.ico
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media/
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "None"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 46, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 56, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 134, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/generate_pdf.py", line 25, in generate_pdf
+    path = output.save()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py", line 58, in save
+    pdf_generator.generate_pdf(self.get_data())
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_generator.py", line 63, in generate_pdf
+    self.template.build_story(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 137, in build_story
+    self.header(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 150, in header
+    self.story.append(self.get_image(data['image_path'], cm(7)))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 144, in get_image
+    img = utils.ImageReader(path)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName=None identity=[ImageReader@0x114fc9c70] Cannot open resource "None"
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media/
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "None"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 46, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 56, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 134, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/generate_pdf.py", line 25, in generate_pdf
+    path = output.save()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py", line 58, in save
+    pdf_generator.generate_pdf(self.get_data())
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_generator.py", line 63, in generate_pdf
+    self.template.build_story(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 137, in build_story
+    self.header(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 150, in header
+    self.story.append(self.get_image(data['image_path'], cm(7)))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 144, in get_image
+    img = utils.ImageReader(path)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName=None identity=[ImageReader@0x10a6b8df0] Cannot open resource "None"
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 09:46:49', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328094649.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+Watching for file changes with StatReloader
+Adding a new website report.
+New website report saved successfully.
+Analyzing website: https://noticetheelephant.com/get-a-quote/
+Website analysis completed.
+Taking screenshot for: https://noticetheelephant.com/get-a-quote/
+Taking mobile screenshot of https://noticetheelephant.com/get-a-quote/
+Saving mobile screenshot as /Users/indiasfernandes/Code/Clients/Urska/websiteAudit/media/noticetheelephant.com.png
+Screenshot taken and accessible at: http://localhost:8080/media/
+Response data generated.
+Generating PDF report.
+Internal Server Error: /api/report/add/
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "None"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 46, in add_report
+    process_report(saved_item, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 56, in process_report
+    generate_pdf_report(saved_item, response_data, request)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py", line 134, in generate_pdf_report
+    pdf_path = generate_pdf(body_data, url, company_name, first_name, last_name, e_mail, overall_grade, image_path)  # Adjust this call according to your PDF generation logic
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/generate_pdf.py", line 25, in generate_pdf
+    path = output.save()
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_output.py", line 58, in save
+    pdf_generator.generate_pdf(self.get_data())
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/pdf_generator.py", line 63, in generate_pdf
+    self.template.build_story(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 137, in build_story
+    self.header(data)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 150, in header
+    self.story.append(self.get_image(data['image_path'], cm(7)))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/utils/generate_pdf/website_audit.py", line 144, in get_image
+    img = utils.ImageReader(path)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 655, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 1176, in annotateException
+    rl_reraise(t,t(sep.join((_ for _ in (msg,str(v),postMsg) if _))),b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 138, in rl_reraise
+    raise v.with_traceback(b)
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 643, in __init__
+    fp = open_for_read(fileName,'b')
+  File "/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/venv/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: 
+fileName=None identity=[ImageReader@0x10f7f2df0] Cannot open resource "None"
+/Users/indiasfernandes/Code/Clients/Urska/websiteAudit/api/views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 09:52:56', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328095256.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 09:55:37', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328095538.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}
+Watching for file changes with StatReloader
+Starting POST request to add a new website report.
+New website report saved successfully.
+Fetching HTML content for URL: https://noticetheelephant.com/get-a-quote/
+Analyzing website HTML content.
+Website analysis completed. Results: {'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.'}
+Constructed response data successfully: {'image_url': 'http://localhost:8080/media/noticetheelephant.com.png', 'Date': '2024-03-28 09:56:50', 'First Name': 'John', 'Last Name': 'Doe', 'Url': 'https://noticetheelephant.com/get-a-quote/', 'E-mail': 'john@example.com', 'Company Name': 'Notice The Elephant', 'report_url': 'http://localhost:8080/media/pdf/PDF-20240328095707.pdf', 'overall_grade': 8, 'cta_button_placement': 'The CTA buttons are well-placed with a clear main call to action above the fold. There are secondary CTAs throughout the page, providing a good user experience.', 'cta_clarity': 'The CTAs are clear and instructive, using simple language that is easy to understand. The messaging is concise and guides the user effectively.', 'headline_focus': 'The headlines are clear and effectively communicate the purpose of the landing page. They are engaging and draw the user in.', 'messaging_clarity': 'The messaging is focused and cohesive, guiding the user towards the goal of the page. The benefits are well-presented, and the text is readable.', 'form_diagnostics': 'The form is well-placed on the landing page, providing alternative contact methods. It is short and user-friendly, enhancing the overall conversion experience.', 'Social Proof': None, 'Company Info Presence': None, 'other_field': 'other_value'}

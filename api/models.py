@@ -42,8 +42,7 @@ class WebsiteReport(models.Model):
         filename = f"{url_updated}.png"
         image_abs_path = os.path.join(settings.MEDIA_ROOT, filename)
 
-        existing_entry = WebsiteReport.objects.filter(url=self.url).first()
-        print(existing_entry)
+        # existing_entry = WebsiteReport.objects.filter(url=self.url).first()
 
         if not os.path.isfile(image_abs_path):
             print('Didnt find screenshot, taking a new screenshot')

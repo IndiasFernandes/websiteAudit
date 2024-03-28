@@ -1,9 +1,16 @@
+import logging
 from datetime import datetime
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle
 
+logging.basicConfig(level=logging.INFO)
+
 def generate_pdf(filename):
+
+    print(f"Generating PDF for {filename}")
+    logging.info(f"Generating PDF for {filename}")
+
     # Variables to be replaced with actual data
     url = "N/A"
     company = "N/A"
@@ -76,3 +83,5 @@ Your details: {name} {last_name}, {email}
     report.build([table1, table2])
 
     print(f"Table created and saved to {pdf_path}")
+
+    return pdf_path
