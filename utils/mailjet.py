@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 from mailjet_rest import Client
 import os
 
+
 def create_and_update_contact(response_data, analysis_results_summary):
     load_dotenv()
 
@@ -10,24 +11,17 @@ def create_and_update_contact(response_data, analysis_results_summary):
 
     mailjet = Client(auth=(MAILJET_API, MAILJET_SECRET))
 
-    # Check if the contact already exists
-    check_contact = mailjet.contact.get(data={'Email': response_data['E-mail']})
-    if check_contact.status_code == 200 and check_contact.json().get('Data'):
-        print("Contact already exists.")
-    else:
-        # Create a new contact with the basic details if it doesn't exist
-        data = {
-            'IsExcludedFromCampaigns': "true",
-            'Name': response_data['First Name'] + " " + response_data['Last Name'],
-            'Email': response_data['E-mail'],
-        }
-        result = mailjet.contact.create(data=data)
-        print(f"Contact creation status code: {result.status_code}")
-        if result.status_code not in [200, 201]:
-            print("Failed to create contact.")
-            return
-
-    # Regardless of whether the contact was just created or already existed, proceed to add to list and update properties
+    # Create a new contact with the basic details
+    data = {
+        'IsExcludedFromCampaigns': "true",
+        'Name': response_data['First Name'] + " " + response_data['Last Name'],
+        'Email': response_data['E-mail'],
+    }
+    result = mailjet.contact.create(data=data)
+    print(f"Contact creation status code: {result.status_code}")
+    if result.status_code not in [200, 201]:
+        print("Failed to create contact.")
+        return
 
     # Retrieve the List ID for "LM-website-CRO-audit"
     response = mailjet.contactslist.get(filters={'Name': 'LM-website-CRO-audit'})
@@ -38,7 +32,7 @@ def create_and_update_contact(response_data, analysis_results_summary):
         data = {
             'ContactsLists': [{
                 'ListID': list_id,
-                'Action': "addnoforce"  # This action adds the contact without forcing a new creation if it already exists
+                'Action': "addnoforce"
             }]
         }
         result = mailjet.contact_managecontactslists.create(id=response_data['E-mail'], data=data)
@@ -46,10 +40,24 @@ def create_and_update_contact(response_data, analysis_results_summary):
     else:
         print("List 'LM-website-CRO-audit' not found.")
 
+
+
     # Update contact with custom properties
     properties_data = {
         'Data': [
-            # Your properties_data content remains the same
+            {'Name': 'companyname', 'Value': response_data.get('Company Name', '')},
+            {'Name': 'firstname', 'Value': response_data.get('First Name', '')},
+            {'Name': 'lastname', 'Value': response_data.get('Last Name', '')},
+            {'Name': 'url', 'Value': response_data.get('Url', '')},
+            {'Name': 'overallgrade', 'Value': int(analysis_results_summary['overall_grade'])},
+            {'Name': 'ctabuttonplacement', 'Value': analysis_results_summary['cta_button_placement']},
+            {'Name': 'ctaclarity', 'Value': analysis_results_summary['cta_clarity']},
+            {'Name': 'headlinefocus', 'Value': analysis_results_summary['headline_focus']},
+            {'Name': 'messagingclarity', 'Value': analysis_results_summary['messaging_clarity']},
+            {'Name': 'formdiagnostics', 'Value': analysis_results_summary['form_diagnostics']},
+            {'Name': 'report_url', 'Value': response_data.get('report_url', '')},
+            # Include additional properties as needed
+            # {'Name': 'property_name', 'Value': response_data.get('field_name', '')},
         ]
     }
     result = mailjet.contactdata.update(id=response_data['E-mail'], data=properties_data)
@@ -57,4 +65,28 @@ def create_and_update_contact(response_data, analysis_results_summary):
     print(f"Update Contact Properties Status: {result.status_code}")
 
 # Example usage
-# Assume response_data and analysis_results_summary are defined
+response_data = {
+    # Assuming new_url and analysis_results are defined elsewhere
+    'image_url': 'http://example.com/image.jpg',
+    'Date': '2020-01-01 12:00:00',
+
+    'First Name': 'John',
+    'Last Name': 'Doe',
+    'Url': 'https://www.example.com',
+    'E-mail': 'example@example.com',
+
+    'Company Name': 'Dummy Company',
+
+    'overall_grade': 'A',
+    'cta_button_placement': 'Top',
+    'cta_clarity': 'Clear',
+    'headline_focus': 'Focused',
+    'messaging_clarity': 'Very Clear',
+    'form_diagnostics': 'No Issues',
+
+    'Social Proof': None,
+    'Company Info Presence': None,
+
+    # Add any other fields you want to include
+    'other_field': 'other_value',
+}
